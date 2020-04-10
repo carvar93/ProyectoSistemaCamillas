@@ -1,0 +1,15 @@
+D:\Users\Josue\Desktop\viernes 27\SistemaGrua\Test\obj\Debug\Test.csprojAssemblyReference.cache
+D:\Users\Josue\Desktop\viernes 27\SistemaGrua\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+D:\Users\Josue\Desktop\viernes 27\SistemaGrua\Test\bin\Debug\Test.dll
+D:\Users\Josue\Desktop\viernes 27\SistemaGrua\Test\bin\Debug\Test.pdb
+D:\Users\Josue\Desktop\viernes 27\SistemaGrua\Test\bin\Debug\Entidades.dll
+D:\Users\Josue\Desktop\viernes 27\SistemaGrua\Test\bin\Debug\Logica.dll
+D:\Users\Josue\Desktop\viernes 27\SistemaGrua\Test\bin\Debug\Proyecto Progra 3.dll
+D:\Users\Josue\Desktop\viernes 27\SistemaGrua\Test\bin\Debug\Entidades.pdb
+D:\Users\Josue\Desktop\viernes 27\SistemaGrua\Test\bin\Debug\Entidades.dll.config
+D:\Users\Josue\Desktop\viernes 27\SistemaGrua\Test\bin\Debug\Logica.pdb
+D:\Users\Josue\Desktop\viernes 27\SistemaGrua\Test\bin\Debug\Proyecto Progra 3.pdb
+D:\Users\Josue\Desktop\viernes 27\SistemaGrua\Test\bin\Debug\Proyecto Progra 3.dll.config
+D:\Users\Josue\Desktop\viernes 27\SistemaGrua\Test\obj\Debug\Test.csproj.CopyComplete
+D:\Users\Josue\Desktop\viernes 27\SistemaGrua\Test\obj\Debug\Test.dll
+D:\Users\Josue\Desktop\viernes 27\SistemaGrua\Test\obj\Debug\Test.pdb

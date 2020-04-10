@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HospitalModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AsignacionCamilla">
+    <Key>
+      <PropertyRef Name="idASignacion" />
+    </Key>
+    <Property Name="idASignacion" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="numeroCamilla" Type="int" Nullable="false" />
+    <Property Name="idpaciente" Type="int" Nullable="false" />
+    <Property Name="fecha" Type="datetime" Nullable="false" />
+    <Property Name="estado" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Camilla">
+    <Key>
+      <PropertyRef Name="NumeroCamilla" />
+    </Key>
+    <Property Name="NumeroCamilla" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="estadoCamilla" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CamillaPorSala">
+    <Key>
+      <PropertyRef Name="idSala" />
+      <PropertyRef Name="numeroCamilla" />
+    </Key>
+    <Property Name="idSala" Type="int" Nullable="false" />
+    <Property Name="numeroCamilla" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Especialidad">
+    <Key>
+      <PropertyRef Name="idEspecialidad" />
+    </Key>
+    <Property Name="idEspecialidad" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Paciente">
+    <Key>
+      <PropertyRef Name="idPaciente" />
+    </Key>
+    <Property Name="idPaciente" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idTrabajador" Type="int" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="padecimiente" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="motivoEmergencia" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Estado" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Perfil">
+    <Key>
+      <PropertyRef Name="idPerfil" />
+    </Key>
+    <Property Name="idPerfil" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sala">
+    <Key>
+      <PropertyRef Name="idSala" />
+    </Key>
+    <Property Name="idSala" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="cantidadCamillas" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Trabajador">
+    <Key>
+      <PropertyRef Name="idTrabajador" />
+    </Key>
+    <Property Name="idTrabajador" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idEspecialidad" Type="int" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="puesto" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="cantidadPacientes" Type="int" Nullable="false" />
+    <Property Name="añosExperiencia" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="idUsuario" />
+    </Key>
+    <Property Name="idUsuario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="clave" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="estadoContraseña" Type="bit" Nullable="false" />
+    <Property Name="correo" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Intento" Type="int" />
+  </EntityType>
+  <EntityType Name="UsuarioPorPerfil">
+    <Key>
+      <PropertyRef Name="idUsuario" />
+      <PropertyRef Name="idPerfil" />
+    </Key>
+    <Property Name="idUsuario" Type="int" Nullable="false" />
+    <Property Name="idPerfil" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_AsignacionCamilla_Camilla">
+    <End Role="Camilla" Type="Self.Camilla" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AsignacionCamilla" Type="Self.AsignacionCamilla" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Camilla">
+        <PropertyRef Name="NumeroCamilla" />
+      </Principal>
+      <Dependent Role="AsignacionCamilla">
+        <PropertyRef Name="numeroCamilla" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AsignacionCamilla_Paciente">
+    <End Role="Paciente" Type="Self.Paciente" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AsignacionCamilla" Type="Self.AsignacionCamilla" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Paciente">
+        <PropertyRef Name="idPaciente" />
+      </Principal>
+      <Dependent Role="AsignacionCamilla">
+        <PropertyRef Name="idpaciente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CamillaPorSala_Camilla">
+    <End Role="Camilla" Type="Self.Camilla" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="CamillaPorSala" Type="Self.CamillaPorSala" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Camilla">
+        <PropertyRef Name="NumeroCamilla" />
+      </Principal>
+      <Dependent Role="CamillaPorSala">
+        <PropertyRef Name="numeroCamilla" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CamillaPorSala_Sala">
+    <End Role="Sala" Type="Self.Sala" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="CamillaPorSala" Type="Self.CamillaPorSala" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sala">
+        <PropertyRef Name="idSala" />
+      </Principal>
+      <Dependent Role="CamillaPorSala">
+        <PropertyRef Name="idSala" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Paciente_Trabajador">
+    <End Role="Trabajador" Type="Self.Trabajador" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Paciente" Type="Self.Paciente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Trabajador">
+        <PropertyRef Name="idTrabajador" />
+      </Principal>
+      <Dependent Role="Paciente">
+        <PropertyRef Name="idTrabajador" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Trabajador_Especialidad">
+    <End Role="Especialidad" Type="Self.Especialidad" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Trabajador" Type="Self.Trabajador" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Especialidad">
+        <PropertyRef Name="idEspecialidad" />
+      </Principal>
+      <Dependent Role="Trabajador">
+        <PropertyRef Name="idEspecialidad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UsuarioPorPerfil_Perfil">
+    <End Role="Perfil" Type="Self.Perfil" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="UsuarioPorPerfil" Type="Self.UsuarioPorPerfil" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Perfil">
+        <PropertyRef Name="idPerfil" />
+      </Principal>
+      <Dependent Role="UsuarioPorPerfil">
+        <PropertyRef Name="idPerfil" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UsuarioPorPerfil_Usuario">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="UsuarioPorPerfil" Type="Self.UsuarioPorPerfil" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="idUsuario" />
+      </Principal>
+      <Dependent Role="UsuarioPorPerfil">
+        <PropertyRef Name="idUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="PA_ActIntento" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Usuario" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="PA_ConsultarAutenticacion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="nomus" Type="varchar" Mode="In" />
+    <Parameter Name="passw" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="PA_ConsultarPerfilesUsuario" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="nomusuario" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="Pa_ResetIntento" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Usuario" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="PA_ResetIntentoAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="Pa_VerificarIntento" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Usuario" Type="varchar" Mode="In" />
+  </Function>
+  <EntityContainer Name="HospitalModelStoreContainer">
+    <EntitySet Name="AsignacionCamilla" EntityType="Self.AsignacionCamilla" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Camilla" EntityType="Self.Camilla" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CamillaPorSala" EntityType="Self.CamillaPorSala" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Especialidad" EntityType="Self.Especialidad" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Paciente" EntityType="Self.Paciente" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Perfil" EntityType="Self.Perfil" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sala" EntityType="Self.Sala" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Trabajador" EntityType="Self.Trabajador" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UsuarioPorPerfil" EntityType="Self.UsuarioPorPerfil" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_AsignacionCamilla_Camilla" Association="Self.FK_AsignacionCamilla_Camilla">
+      <End Role="Camilla" EntitySet="Camilla" />
+      <End Role="AsignacionCamilla" EntitySet="AsignacionCamilla" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AsignacionCamilla_Paciente" Association="Self.FK_AsignacionCamilla_Paciente">
+      <End Role="Paciente" EntitySet="Paciente" />
+      <End Role="AsignacionCamilla" EntitySet="AsignacionCamilla" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CamillaPorSala_Camilla" Association="Self.FK_CamillaPorSala_Camilla">
+      <End Role="Camilla" EntitySet="Camilla" />
+      <End Role="CamillaPorSala" EntitySet="CamillaPorSala" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CamillaPorSala_Sala" Association="Self.FK_CamillaPorSala_Sala">
+      <End Role="Sala" EntitySet="Sala" />
+      <End Role="CamillaPorSala" EntitySet="CamillaPorSala" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Paciente_Trabajador" Association="Self.FK_Paciente_Trabajador">
+      <End Role="Trabajador" EntitySet="Trabajador" />
+      <End Role="Paciente" EntitySet="Paciente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Trabajador_Especialidad" Association="Self.FK_Trabajador_Especialidad">
+      <End Role="Especialidad" EntitySet="Especialidad" />
+      <End Role="Trabajador" EntitySet="Trabajador" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UsuarioPorPerfil_Perfil" Association="Self.FK_UsuarioPorPerfil_Perfil">
+      <End Role="Perfil" EntitySet="Perfil" />
+      <End Role="UsuarioPorPerfil" EntitySet="UsuarioPorPerfil" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UsuarioPorPerfil_Usuario" Association="Self.FK_UsuarioPorPerfil_Usuario">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="UsuarioPorPerfil" EntitySet="UsuarioPorPerfil" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

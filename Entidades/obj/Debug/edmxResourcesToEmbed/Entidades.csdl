@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HospitalModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AsignacionCamilla">
+    <Key>
+      <PropertyRef Name="idASignacion" />
+    </Key>
+    <Property Name="idASignacion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="numeroCamilla" Type="Int32" Nullable="false" />
+    <Property Name="idpaciente" Type="Int32" Nullable="false" />
+    <Property Name="fecha" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="estado" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Camilla" Relationship="Self.FK_AsignacionCamilla_Camilla" FromRole="AsignacionCamilla" ToRole="Camilla" />
+    <NavigationProperty Name="Paciente" Relationship="Self.FK_AsignacionCamilla_Paciente" FromRole="AsignacionCamilla" ToRole="Paciente" />
+  </EntityType>
+  <EntityType Name="Camilla">
+    <Key>
+      <PropertyRef Name="NumeroCamilla" />
+    </Key>
+    <Property Name="NumeroCamilla" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="estadoCamilla" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="AsignacionCamilla" Relationship="Self.FK_AsignacionCamilla_Camilla" FromRole="Camilla" ToRole="AsignacionCamilla" />
+    <NavigationProperty Name="Sala" Relationship="Self.CamillaPorSala" FromRole="Camilla" ToRole="Sala" />
+  </EntityType>
+  <EntityType Name="Especialidad">
+    <Key>
+      <PropertyRef Name="idEspecialidad" />
+    </Key>
+    <Property Name="idEspecialidad" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Trabajador" Relationship="Self.FK_Trabajador_Especialidad" FromRole="Especialidad" ToRole="Trabajador" />
+  </EntityType>
+  <EntityType Name="Paciente">
+    <Key>
+      <PropertyRef Name="idPaciente" />
+    </Key>
+    <Property Name="idPaciente" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idTrabajador" Type="Int32" Nullable="false" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="padecimiente" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="motivoEmergencia" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Estado" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="AsignacionCamilla" Relationship="Self.FK_AsignacionCamilla_Paciente" FromRole="Paciente" ToRole="AsignacionCamilla" />
+    <NavigationProperty Name="Trabajador" Relationship="Self.FK_Paciente_Trabajador" FromRole="Paciente" ToRole="Trabajador" />
+  </EntityType>
+  <EntityType Name="Perfil">
+    <Key>
+      <PropertyRef Name="idPerfil" />
+    </Key>
+    <Property Name="idPerfil" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Usuario" Relationship="Self.UsuarioPorPerfil" FromRole="Perfil" ToRole="Usuario" />
+  </EntityType>
+  <EntityType Name="Sala">
+    <Key>
+      <PropertyRef Name="idSala" />
+    </Key>
+    <Property Name="idSala" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="cantidadCamillas" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Camilla" Relationship="Self.CamillaPorSala" FromRole="Sala" ToRole="Camilla" />
+  </EntityType>
+  <EntityType Name="Trabajador">
+    <Key>
+      <PropertyRef Name="idTrabajador" />
+    </Key>
+    <Property Name="idTrabajador" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idEspecialidad" Type="Int32" Nullable="false" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="puesto" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="cantidadPacientes" Type="Int32" Nullable="false" />
+    <Property Name="añosExperiencia" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Especialidad" Relationship="Self.FK_Trabajador_Especialidad" FromRole="Trabajador" ToRole="Especialidad" />
+    <NavigationProperty Name="Paciente" Relationship="Self.FK_Paciente_Trabajador" FromRole="Trabajador" ToRole="Paciente" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="idUsuario" />
+    </Key>
+    <Property Name="idUsuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="clave" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="estadoContraseña" Type="Boolean" Nullable="false" />
+    <Property Name="correo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Intento" Type="Int32" />
+    <NavigationProperty Name="Perfil" Relationship="Self.UsuarioPorPerfil" FromRole="Usuario" ToRole="Perfil" />
+  </EntityType>
+  <Association Name="FK_AsignacionCamilla_Camilla">
+    <End Role="Camilla" Type="Self.Camilla" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AsignacionCamilla" Type="Self.AsignacionCamilla" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Camilla">
+        <PropertyRef Name="NumeroCamilla" />
+      </Principal>
+      <Dependent Role="AsignacionCamilla">
+        <PropertyRef Name="numeroCamilla" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AsignacionCamilla_Paciente">
+    <End Role="Paciente" Type="Self.Paciente" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AsignacionCamilla" Type="Self.AsignacionCamilla" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Paciente">
+        <PropertyRef Name="idPaciente" />
+      </Principal>
+      <Dependent Role="AsignacionCamilla">
+        <PropertyRef Name="idpaciente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Trabajador_Especialidad">
+    <End Role="Especialidad" Type="Self.Especialidad" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Trabajador" Type="Self.Trabajador" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Especialidad">
+        <PropertyRef Name="idEspecialidad" />
+      </Principal>
+      <Dependent Role="Trabajador">
+        <PropertyRef Name="idEspecialidad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Paciente_Trabajador">
+    <End Role="Trabajador" Type="Self.Trabajador" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Paciente" Type="Self.Paciente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Trabajador">
+        <PropertyRef Name="idTrabajador" />
+      </Principal>
+      <Dependent Role="Paciente">
+        <PropertyRef Name="idTrabajador" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CamillaPorSala">
+    <End Role="Camilla" Type="Self.Camilla" Multiplicity="*" />
+    <End Role="Sala" Type="Self.Sala" Multiplicity="*" />
+  </Association>
+  <Association Name="UsuarioPorPerfil">
+    <End Role="Perfil" Type="Self.Perfil" Multiplicity="*" />
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="HospitalEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AsignacionCamilla" EntityType="Self.AsignacionCamilla" />
+    <EntitySet Name="Camilla" EntityType="Self.Camilla" />
+    <EntitySet Name="Especialidad" EntityType="Self.Especialidad" />
+    <EntitySet Name="Paciente" EntityType="Self.Paciente" />
+    <EntitySet Name="Perfil" EntityType="Self.Perfil" />
+    <EntitySet Name="Sala" EntityType="Self.Sala" />
+    <EntitySet Name="Trabajador" EntityType="Self.Trabajador" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" />
+    <AssociationSet Name="FK_AsignacionCamilla_Camilla" Association="Self.FK_AsignacionCamilla_Camilla">
+      <End Role="Camilla" EntitySet="Camilla" />
+      <End Role="AsignacionCamilla" EntitySet="AsignacionCamilla" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AsignacionCamilla_Paciente" Association="Self.FK_AsignacionCamilla_Paciente">
+      <End Role="Paciente" EntitySet="Paciente" />
+      <End Role="AsignacionCamilla" EntitySet="AsignacionCamilla" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Trabajador_Especialidad" Association="Self.FK_Trabajador_Especialidad">
+      <End Role="Especialidad" EntitySet="Especialidad" />
+      <End Role="Trabajador" EntitySet="Trabajador" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Paciente_Trabajador" Association="Self.FK_Paciente_Trabajador">
+      <End Role="Trabajador" EntitySet="Trabajador" />
+      <End Role="Paciente" EntitySet="Paciente" />
+    </AssociationSet>
+    <AssociationSet Name="CamillaPorSala" Association="Self.CamillaPorSala">
+      <End Role="Camilla" EntitySet="Camilla" />
+      <End Role="Sala" EntitySet="Sala" />
+    </AssociationSet>
+    <AssociationSet Name="UsuarioPorPerfil" Association="Self.UsuarioPorPerfil">
+      <End Role="Perfil" EntitySet="Perfil" />
+      <End Role="Usuario" EntitySet="Usuario" />
+    </AssociationSet>
+    <FunctionImport Name="PA_ActIntento">
+      <Parameter Name="Usuario" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="PA_ConsultarAutenticacion" ReturnType="Collection(HospitalModel.PA_ConsultarAutenticacion_Result)">
+      <Parameter Name="nomus" Mode="In" Type="String" />
+      <Parameter Name="passw" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="PA_ConsultarPerfilesUsuario" ReturnType="Collection(HospitalModel.PA_ConsultarPerfilesUsuario_Result)">
+      <Parameter Name="nomusuario" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Pa_ResetIntento">
+      <Parameter Name="Usuario" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="PA_ResetIntentoAll" />
+    <FunctionImport Name="Pa_VerificarIntento" ReturnType="Collection(Int32)">
+      <Parameter Name="Usuario" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="PA_ConsultarAutenticacion_Result">
+    <Property Type="Int32" Name="idUsuario" Nullable="false" />
+    <Property Type="String" Name="nombre" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="clave" Nullable="false" MaxLength="50" />
+    <Property Type="Boolean" Name="estadoContraseña" Nullable="false" />
+    <Property Type="String" Name="correo" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="PA_ConsultarPerfilesUsuario_Result">
+    <Property Type="Int32" Name="idPerfil" Nullable="false" />
+    <Property Type="String" Name="nombre" Nullable="false" MaxLength="50" />
+  </ComplexType>
+</Schema>

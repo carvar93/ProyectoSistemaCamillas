@@ -1,0 +1,19 @@
+C:\Users\Ever Josué\source\repos\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll
+C:\Users\Ever Josué\source\repos\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.pdb
+C:\Users\Ever Josué\source\repos\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Entidades.dll
+C:\Users\Ever Josué\source\repos\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Entidades.pdb
+C:\Users\Ever Josué\source\repos\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\Acceso.csprojAssemblyReference.cache
+C:\Users\Ever Josué\source\repos\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\Acceso.csproj.CoreCompileInputs.cache
+C:\Users\Ever Josué\source\repos\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\Acceso.csproj.CopyComplete
+C:\Users\Ever Josué\source\repos\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.dll
+C:\Users\Ever Josué\source\repos\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.pdb
+E:\Cursos U\Progra 3\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll.config
+E:\Cursos U\Progra 3\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll
+E:\Cursos U\Progra 3\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.pdb
+E:\Cursos U\Progra 3\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Entidades.dll
+E:\Cursos U\Progra 3\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Entidades.pdb
+E:\Cursos U\Progra 3\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\Acceso.csprojAssemblyReference.cache
+E:\Cursos U\Progra 3\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\Acceso.csproj.CoreCompileInputs.cache
+E:\Cursos U\Progra 3\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\Acceso.csproj.CopyComplete
+E:\Cursos U\Progra 3\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.dll
+E:\Cursos U\Progra 3\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.pdb

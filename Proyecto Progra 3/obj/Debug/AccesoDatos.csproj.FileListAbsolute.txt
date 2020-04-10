@@ -1,0 +1,296 @@
+C:\Users\cavu9\Downloads\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll.config
+C:\Users\cavu9\Downloads\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll
+C:\Users\cavu9\Downloads\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.pdb
+C:\Users\cavu9\Downloads\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Entidades.dll
+C:\Users\cavu9\Downloads\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Entidades.pdb
+C:\Users\cavu9\Downloads\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Entidades.dll.config
+C:\Users\cavu9\Downloads\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\AccesoDatos.csprojAssemblyReference.cache
+C:\Users\cavu9\Downloads\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CoreCompileInputs.cache
+C:\Users\cavu9\Downloads\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CopyComplete
+C:\Users\cavu9\Downloads\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.dll
+C:\Users\cavu9\Downloads\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.pdb
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll.config
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.pdb
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Entidades.dll
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Entidades.pdb
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Entidades.dll.config
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\AccesoDatos.csprojAssemblyReference.cache
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CoreCompileInputs.cache
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CopyComplete
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.dll
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.pdb
+C:\Users\Soporte\Downloads\ProyectoProgra3 (login y ususarios)\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll.config
+C:\Users\Soporte\Downloads\ProyectoProgra3 (login y ususarios)\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll
+C:\Users\Soporte\Downloads\ProyectoProgra3 (login y ususarios)\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.pdb
+C:\Users\Soporte\Downloads\ProyectoProgra3 (login y ususarios)\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Entidades.dll
+C:\Users\Soporte\Downloads\ProyectoProgra3 (login y ususarios)\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Entidades.pdb
+C:\Users\Soporte\Downloads\ProyectoProgra3 (login y ususarios)\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Entidades.dll.config
+C:\Users\Soporte\Downloads\ProyectoProgra3 (login y ususarios)\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\AccesoDatos.csprojAssemblyReference.cache
+C:\Users\Soporte\Downloads\ProyectoProgra3 (login y ususarios)\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CoreCompileInputs.cache
+C:\Users\Soporte\Downloads\ProyectoProgra3 (login y ususarios)\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CopyComplete
+C:\Users\Soporte\Downloads\ProyectoProgra3 (login y ususarios)\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.dll
+C:\Users\Soporte\Downloads\ProyectoProgra3 (login y ususarios)\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.pdb
+C:\Users\cavu9\OneDrive\Escritorio\Nueva carpeta\ProyectoProgra3 (login y ususarios)\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll.config
+C:\Users\cavu9\OneDrive\Escritorio\Nueva carpeta\ProyectoProgra3 (login y ususarios)\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll
+C:\Users\cavu9\OneDrive\Escritorio\Nueva carpeta\ProyectoProgra3 (login y ususarios)\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.pdb
+C:\Users\cavu9\OneDrive\Escritorio\Nueva carpeta\ProyectoProgra3 (login y ususarios)\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Entidades.dll
+C:\Users\cavu9\OneDrive\Escritorio\Nueva carpeta\ProyectoProgra3 (login y ususarios)\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Entidades.pdb
+C:\Users\cavu9\OneDrive\Escritorio\Nueva carpeta\ProyectoProgra3 (login y ususarios)\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Entidades.dll.config
+C:\Users\cavu9\OneDrive\Escritorio\Nueva carpeta\ProyectoProgra3 (login y ususarios)\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\AccesoDatos.csprojAssemblyReference.cache
+C:\Users\cavu9\OneDrive\Escritorio\Nueva carpeta\ProyectoProgra3 (login y ususarios)\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CoreCompileInputs.cache
+C:\Users\cavu9\OneDrive\Escritorio\Nueva carpeta\ProyectoProgra3 (login y ususarios)\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CopyComplete
+C:\Users\cavu9\OneDrive\Escritorio\Nueva carpeta\ProyectoProgra3 (login y ususarios)\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.dll
+C:\Users\cavu9\OneDrive\Escritorio\Nueva carpeta\ProyectoProgra3 (login y ususarios)\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.pdb
+C:\Users\cavu9\OneDrive\Escritorio\Nueva carpeta (3)\respaldoPrpoy\Nueva carpeta\ProyectoProgra3 (login y ususarios)\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll.config
+C:\Users\cavu9\OneDrive\Escritorio\Nueva carpeta (3)\respaldoPrpoy\Nueva carpeta\ProyectoProgra3 (login y ususarios)\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll
+C:\Users\cavu9\OneDrive\Escritorio\Nueva carpeta (3)\respaldoPrpoy\Nueva carpeta\ProyectoProgra3 (login y ususarios)\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.pdb
+C:\Users\cavu9\OneDrive\Escritorio\Nueva carpeta (3)\respaldoPrpoy\Nueva carpeta\ProyectoProgra3 (login y ususarios)\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Entidades.dll
+C:\Users\cavu9\OneDrive\Escritorio\Nueva carpeta (3)\respaldoPrpoy\Nueva carpeta\ProyectoProgra3 (login y ususarios)\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Entidades.pdb
+C:\Users\cavu9\OneDrive\Escritorio\Nueva carpeta (3)\respaldoPrpoy\Nueva carpeta\ProyectoProgra3 (login y ususarios)\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Entidades.dll.config
+C:\Users\cavu9\OneDrive\Escritorio\Nueva carpeta (3)\respaldoPrpoy\Nueva carpeta\ProyectoProgra3 (login y ususarios)\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\AccesoDatos.csprojAssemblyReference.cache
+C:\Users\cavu9\OneDrive\Escritorio\Nueva carpeta (3)\respaldoPrpoy\Nueva carpeta\ProyectoProgra3 (login y ususarios)\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CoreCompileInputs.cache
+C:\Users\cavu9\OneDrive\Escritorio\Nueva carpeta (3)\respaldoPrpoy\Nueva carpeta\ProyectoProgra3 (login y ususarios)\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CopyComplete
+C:\Users\cavu9\OneDrive\Escritorio\Nueva carpeta (3)\respaldoPrpoy\Nueva carpeta\ProyectoProgra3 (login y ususarios)\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.dll
+C:\Users\cavu9\OneDrive\Escritorio\Nueva carpeta (3)\respaldoPrpoy\Nueva carpeta\ProyectoProgra3 (login y ususarios)\Proyecto Progra 3\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.pdb
+E:\Cursos U\Progra 3\Proyecto Proy3(login,usuarios,perfil y consultapor estado)\Proyecto Proy3(login,usuarios,perfil y consultapor estado)\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll.config
+E:\Cursos U\Progra 3\Proyecto Proy3(login,usuarios,perfil y consultapor estado)\Proyecto Proy3(login,usuarios,perfil y consultapor estado)\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll
+E:\Cursos U\Progra 3\Proyecto Proy3(login,usuarios,perfil y consultapor estado)\Proyecto Proy3(login,usuarios,perfil y consultapor estado)\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.pdb
+E:\Cursos U\Progra 3\Proyecto Proy3(login,usuarios,perfil y consultapor estado)\Proyecto Proy3(login,usuarios,perfil y consultapor estado)\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Entidades.dll
+E:\Cursos U\Progra 3\Proyecto Proy3(login,usuarios,perfil y consultapor estado)\Proyecto Proy3(login,usuarios,perfil y consultapor estado)\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Entidades.pdb
+E:\Cursos U\Progra 3\Proyecto Proy3(login,usuarios,perfil y consultapor estado)\Proyecto Proy3(login,usuarios,perfil y consultapor estado)\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Entidades.dll.config
+E:\Cursos U\Progra 3\Proyecto Proy3(login,usuarios,perfil y consultapor estado)\Proyecto Proy3(login,usuarios,perfil y consultapor estado)\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\AccesoDatos.csprojAssemblyReference.cache
+E:\Cursos U\Progra 3\Proyecto Proy3(login,usuarios,perfil y consultapor estado)\Proyecto Proy3(login,usuarios,perfil y consultapor estado)\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CoreCompileInputs.cache
+E:\Cursos U\Progra 3\Proyecto Proy3(login,usuarios,perfil y consultapor estado)\Proyecto Proy3(login,usuarios,perfil y consultapor estado)\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CopyComplete
+E:\Cursos U\Progra 3\Proyecto Proy3(login,usuarios,perfil y consultapor estado)\Proyecto Proy3(login,usuarios,perfil y consultapor estado)\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.dll
+E:\Cursos U\Progra 3\Proyecto Proy3(login,usuarios,perfil y consultapor estado)\Proyecto Proy3(login,usuarios,perfil y consultapor estado)\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.pdb
+E:\Cursos U\Progra 3\Proyecto Proy3(login,usuarios,perfil y consultapor estado)\Proyecto Proy3(login,usuarios,perfil y consultapor estado)y chofer\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\AccesoDatos.csprojAssemblyReference.cache
+E:\Cursos U\Progra 3\Proyecto Proy3(login,usuarios,perfil y consultapor estado)\Proyecto Proy3(login,usuarios,perfil y consultapor estado)y chofer\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CoreCompileInputs.cache
+E:\Cursos U\Progra 3\Proyecto Proy3(login,usuarios,perfil y consultapor estado)\Proyecto Proy3(login,usuarios,perfil y consultapor estado)y chofer\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.dll
+E:\Cursos U\Progra 3\Proyecto Proy3(login,usuarios,perfil y consultapor estado)\Proyecto Proy3(login,usuarios,perfil y consultapor estado)y chofer\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.pdb
+E:\Cursos U\Progra 3\Proyecto Proy3(login,usuarios,perfil y consultapor estado)\Proyecto Proy3(login,usuarios,perfil y consultapor estado)y chofer\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll.config
+E:\Cursos U\Progra 3\Proyecto Proy3(login,usuarios,perfil y consultapor estado)\Proyecto Proy3(login,usuarios,perfil y consultapor estado)y chofer\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll
+E:\Cursos U\Progra 3\Proyecto Proy3(login,usuarios,perfil y consultapor estado)\Proyecto Proy3(login,usuarios,perfil y consultapor estado)y chofer\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.pdb
+E:\Cursos U\Progra 3\Proyecto Proy3(login,usuarios,perfil y consultapor estado)\Proyecto Proy3(login,usuarios,perfil y consultapor estado)y chofer\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Entidades.dll
+E:\Cursos U\Progra 3\Proyecto Proy3(login,usuarios,perfil y consultapor estado)\Proyecto Proy3(login,usuarios,perfil y consultapor estado)y chofer\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Entidades.pdb
+E:\Cursos U\Progra 3\Proyecto Proy3(login,usuarios,perfil y consultapor estado)\Proyecto Proy3(login,usuarios,perfil y consultapor estado)y chofer\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Entidades.dll.config
+E:\Cursos U\Progra 3\Proyecto Proy3(login,usuarios,perfil y consultapor estado)\Proyecto Proy3(login,usuarios,perfil y consultapor estado)y chofer\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CopyComplete
+E:\Cursos U\Progra 3\Proyecto Proy3(login,usuarios,perfil y consultapor estado)\Proyecto Proy3(login,usuarios,perfil y consultapor estado)chofer,grua\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll.config
+E:\Cursos U\Progra 3\Proyecto Proy3(login,usuarios,perfil y consultapor estado)\Proyecto Proy3(login,usuarios,perfil y consultapor estado)chofer,grua\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll
+E:\Cursos U\Progra 3\Proyecto Proy3(login,usuarios,perfil y consultapor estado)\Proyecto Proy3(login,usuarios,perfil y consultapor estado)chofer,grua\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.pdb
+E:\Cursos U\Progra 3\Proyecto Proy3(login,usuarios,perfil y consultapor estado)\Proyecto Proy3(login,usuarios,perfil y consultapor estado)chofer,grua\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Entidades.dll
+E:\Cursos U\Progra 3\Proyecto Proy3(login,usuarios,perfil y consultapor estado)\Proyecto Proy3(login,usuarios,perfil y consultapor estado)chofer,grua\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Entidades.pdb
+E:\Cursos U\Progra 3\Proyecto Proy3(login,usuarios,perfil y consultapor estado)\Proyecto Proy3(login,usuarios,perfil y consultapor estado)chofer,grua\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Entidades.dll.config
+E:\Cursos U\Progra 3\Proyecto Proy3(login,usuarios,perfil y consultapor estado)\Proyecto Proy3(login,usuarios,perfil y consultapor estado)chofer,grua\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\AccesoDatos.csprojAssemblyReference.cache
+E:\Cursos U\Progra 3\Proyecto Proy3(login,usuarios,perfil y consultapor estado)\Proyecto Proy3(login,usuarios,perfil y consultapor estado)chofer,grua\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CoreCompileInputs.cache
+E:\Cursos U\Progra 3\Proyecto Proy3(login,usuarios,perfil y consultapor estado)\Proyecto Proy3(login,usuarios,perfil y consultapor estado)chofer,grua\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CopyComplete
+E:\Cursos U\Progra 3\Proyecto Proy3(login,usuarios,perfil y consultapor estado)\Proyecto Proy3(login,usuarios,perfil y consultapor estado)chofer,grua\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.dll
+E:\Cursos U\Progra 3\Proyecto Proy3(login,usuarios,perfil y consultapor estado)\Proyecto Proy3(login,usuarios,perfil y consultapor estado)chofer,grua\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.pdb
+D:\Repositorio\Proyecto Grua\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll.config
+D:\Repositorio\Proyecto Grua\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll
+D:\Repositorio\Proyecto Grua\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.pdb
+D:\Repositorio\Proyecto Grua\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Entidades.dll
+D:\Repositorio\Proyecto Grua\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Entidades.pdb
+D:\Repositorio\Proyecto Grua\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Entidades.dll.config
+D:\Repositorio\Proyecto Grua\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\AccesoDatos.csprojResolveAssemblyReference.cache
+D:\Repositorio\Proyecto Grua\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CoreCompileInputs.cache
+D:\Repositorio\Proyecto Grua\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.dll
+D:\Repositorio\Proyecto Grua\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.pdb
+D:\Users\Josue\Desktop\Proyecto Grua\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll.config
+D:\Users\Josue\Desktop\Proyecto Grua\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll
+D:\Users\Josue\Desktop\Proyecto Grua\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.pdb
+D:\Users\Josue\Desktop\Proyecto Grua\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Entidades.dll
+D:\Users\Josue\Desktop\Proyecto Grua\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Entidades.pdb
+D:\Users\Josue\Desktop\Proyecto Grua\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Entidades.dll.config
+D:\Users\Josue\Desktop\Proyecto Grua\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\AccesoDatos.csprojAssemblyReference.cache
+D:\Users\Josue\Desktop\Proyecto Grua\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CoreCompileInputs.cache
+D:\Users\Josue\Desktop\Proyecto Grua\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CopyComplete
+D:\Users\Josue\Desktop\Proyecto Grua\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.dll
+D:\Users\Josue\Desktop\Proyecto Grua\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.pdb
+C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll.config
+C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll
+C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.pdb
+C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Entidades.dll
+C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Entidades.pdb
+C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3\Proyecto Progra 3\bin\Debug\Entidades.dll.config
+C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\AccesoDatos.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CopyComplete
+C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.dll
+C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.pdb
+C:\Users\cavu9\OneDrive\Escritorio\VIERNES\Proyecto Progra 3.1\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll.config
+C:\Users\cavu9\OneDrive\Escritorio\VIERNES\Proyecto Progra 3.1\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll
+C:\Users\cavu9\OneDrive\Escritorio\VIERNES\Proyecto Progra 3.1\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.pdb
+C:\Users\cavu9\OneDrive\Escritorio\VIERNES\Proyecto Progra 3.1\Proyecto Progra 3\bin\Debug\Entidades.dll
+C:\Users\cavu9\OneDrive\Escritorio\VIERNES\Proyecto Progra 3.1\Proyecto Progra 3\bin\Debug\Entidades.pdb
+C:\Users\cavu9\OneDrive\Escritorio\VIERNES\Proyecto Progra 3.1\Proyecto Progra 3\bin\Debug\Entidades.dll.config
+C:\Users\cavu9\OneDrive\Escritorio\VIERNES\Proyecto Progra 3.1\Proyecto Progra 3\obj\Debug\AccesoDatos.csprojAssemblyReference.cache
+C:\Users\cavu9\OneDrive\Escritorio\VIERNES\Proyecto Progra 3.1\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CoreCompileInputs.cache
+C:\Users\cavu9\OneDrive\Escritorio\VIERNES\Proyecto Progra 3.1\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CopyComplete
+C:\Users\cavu9\OneDrive\Escritorio\VIERNES\Proyecto Progra 3.1\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.dll
+C:\Users\cavu9\OneDrive\Escritorio\VIERNES\Proyecto Progra 3.1\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.pdb
+C:\Users\Admin\Desktop\Carlos\doming\Proyecto Progra 3.1\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll.config
+C:\Users\Admin\Desktop\Carlos\doming\Proyecto Progra 3.1\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll
+C:\Users\Admin\Desktop\Carlos\doming\Proyecto Progra 3.1\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.pdb
+C:\Users\Admin\Desktop\Carlos\doming\Proyecto Progra 3.1\Proyecto Progra 3\bin\Debug\Entidades.dll
+C:\Users\Admin\Desktop\Carlos\doming\Proyecto Progra 3.1\Proyecto Progra 3\bin\Debug\Entidades.pdb
+C:\Users\Admin\Desktop\Carlos\doming\Proyecto Progra 3.1\Proyecto Progra 3\bin\Debug\Entidades.dll.config
+C:\Users\Admin\Desktop\Carlos\doming\Proyecto Progra 3.1\Proyecto Progra 3\obj\Debug\AccesoDatos.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\Carlos\doming\Proyecto Progra 3.1\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Carlos\doming\Proyecto Progra 3.1\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CopyComplete
+C:\Users\Admin\Desktop\Carlos\doming\Proyecto Progra 3.1\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.dll
+C:\Users\Admin\Desktop\Carlos\doming\Proyecto Progra 3.1\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.pdb
+C:\Users\cavu9\OneDrive\Documentos\UAM\Progra3\Proyecto1\Proyecto Progra 3.1lunes\Proyecto Progra 3.1\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll.config
+C:\Users\cavu9\OneDrive\Documentos\UAM\Progra3\Proyecto1\Proyecto Progra 3.1lunes\Proyecto Progra 3.1\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll
+C:\Users\cavu9\OneDrive\Documentos\UAM\Progra3\Proyecto1\Proyecto Progra 3.1lunes\Proyecto Progra 3.1\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.pdb
+C:\Users\cavu9\OneDrive\Documentos\UAM\Progra3\Proyecto1\Proyecto Progra 3.1lunes\Proyecto Progra 3.1\Proyecto Progra 3\bin\Debug\Entidades.dll
+C:\Users\cavu9\OneDrive\Documentos\UAM\Progra3\Proyecto1\Proyecto Progra 3.1lunes\Proyecto Progra 3.1\Proyecto Progra 3\bin\Debug\Entidades.pdb
+C:\Users\cavu9\OneDrive\Documentos\UAM\Progra3\Proyecto1\Proyecto Progra 3.1lunes\Proyecto Progra 3.1\Proyecto Progra 3\bin\Debug\Entidades.dll.config
+C:\Users\cavu9\OneDrive\Documentos\UAM\Progra3\Proyecto1\Proyecto Progra 3.1lunes\Proyecto Progra 3.1\Proyecto Progra 3\obj\Debug\AccesoDatos.csprojAssemblyReference.cache
+C:\Users\cavu9\OneDrive\Documentos\UAM\Progra3\Proyecto1\Proyecto Progra 3.1lunes\Proyecto Progra 3.1\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CoreCompileInputs.cache
+C:\Users\cavu9\OneDrive\Documentos\UAM\Progra3\Proyecto1\Proyecto Progra 3.1lunes\Proyecto Progra 3.1\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CopyComplete
+C:\Users\cavu9\OneDrive\Documentos\UAM\Progra3\Proyecto1\Proyecto Progra 3.1lunes\Proyecto Progra 3.1\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.dll
+C:\Users\cavu9\OneDrive\Documentos\UAM\Progra3\Proyecto1\Proyecto Progra 3.1lunes\Proyecto Progra 3.1\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.pdb
+C:\Users\Admin\Desktop\Proyecto martes\proyecto3Martes\Proyecto Progra 3.1\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll.config
+C:\Users\Admin\Desktop\Proyecto martes\proyecto3Martes\Proyecto Progra 3.1\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll
+C:\Users\Admin\Desktop\Proyecto martes\proyecto3Martes\Proyecto Progra 3.1\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.pdb
+C:\Users\Admin\Desktop\Proyecto martes\proyecto3Martes\Proyecto Progra 3.1\Proyecto Progra 3\bin\Debug\Entidades.dll
+C:\Users\Admin\Desktop\Proyecto martes\proyecto3Martes\Proyecto Progra 3.1\Proyecto Progra 3\bin\Debug\Entidades.pdb
+C:\Users\Admin\Desktop\Proyecto martes\proyecto3Martes\Proyecto Progra 3.1\Proyecto Progra 3\bin\Debug\Entidades.dll.config
+C:\Users\Admin\Desktop\Proyecto martes\proyecto3Martes\Proyecto Progra 3.1\Proyecto Progra 3\obj\Debug\AccesoDatos.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\Proyecto martes\proyecto3Martes\Proyecto Progra 3.1\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Proyecto martes\proyecto3Martes\Proyecto Progra 3.1\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CopyComplete
+C:\Users\Admin\Desktop\Proyecto martes\proyecto3Martes\Proyecto Progra 3.1\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.dll
+C:\Users\Admin\Desktop\Proyecto martes\proyecto3Martes\Proyecto Progra 3.1\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.pdb
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto Progra 3.1Martes\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll.config
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto Progra 3.1Martes\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto Progra 3.1Martes\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.pdb
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto Progra 3.1Martes\Proyecto Progra 3\bin\Debug\Entidades.dll
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto Progra 3.1Martes\Proyecto Progra 3\bin\Debug\Entidades.pdb
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto Progra 3.1Martes\Proyecto Progra 3\bin\Debug\Entidades.dll.config
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto Progra 3.1Martes\Proyecto Progra 3\obj\Debug\AccesoDatos.csprojAssemblyReference.cache
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto Progra 3.1Martes\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CoreCompileInputs.cache
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto Progra 3.1Martes\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CopyComplete
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto Progra 3.1Martes\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.dll
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto Progra 3.1Martes\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.pdb
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto Progra 3.1Miercoles\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll.config
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto Progra 3.1Miercoles\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto Progra 3.1Miercoles\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.pdb
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto Progra 3.1Miercoles\Proyecto Progra 3\bin\Debug\Entidades.dll
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto Progra 3.1Miercoles\Proyecto Progra 3\bin\Debug\Entidades.pdb
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto Progra 3.1Miercoles\Proyecto Progra 3\bin\Debug\Entidades.dll.config
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto Progra 3.1Miercoles\Proyecto Progra 3\obj\Debug\AccesoDatos.csprojAssemblyReference.cache
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto Progra 3.1Miercoles\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CoreCompileInputs.cache
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto Progra 3.1Miercoles\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CopyComplete
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto Progra 3.1Miercoles\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.dll
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto Progra 3.1Miercoles\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.pdb
+C:\Users\Admin\Desktop\jueves\ProyJueves\Proyecto Progra 3.1Jueves\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll.config
+C:\Users\Admin\Desktop\jueves\ProyJueves\Proyecto Progra 3.1Jueves\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll
+C:\Users\Admin\Desktop\jueves\ProyJueves\Proyecto Progra 3.1Jueves\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.pdb
+C:\Users\Admin\Desktop\jueves\ProyJueves\Proyecto Progra 3.1Jueves\Proyecto Progra 3\bin\Debug\Entidades.dll
+C:\Users\Admin\Desktop\jueves\ProyJueves\Proyecto Progra 3.1Jueves\Proyecto Progra 3\bin\Debug\Entidades.pdb
+C:\Users\Admin\Desktop\jueves\ProyJueves\Proyecto Progra 3.1Jueves\Proyecto Progra 3\bin\Debug\Entidades.dll.config
+C:\Users\Admin\Desktop\jueves\ProyJueves\Proyecto Progra 3.1Jueves\Proyecto Progra 3\obj\Debug\AccesoDatos.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\jueves\ProyJueves\Proyecto Progra 3.1Jueves\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\jueves\ProyJueves\Proyecto Progra 3.1Jueves\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CopyComplete
+C:\Users\Admin\Desktop\jueves\ProyJueves\Proyecto Progra 3.1Jueves\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.dll
+C:\Users\Admin\Desktop\jueves\ProyJueves\Proyecto Progra 3.1Jueves\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.pdb
+C:\Users\Jhaser\Downloads\Proyecto Progra 3.1Jueves\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll.config
+C:\Users\Jhaser\Downloads\Proyecto Progra 3.1Jueves\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll
+C:\Users\Jhaser\Downloads\Proyecto Progra 3.1Jueves\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.pdb
+C:\Users\Jhaser\Downloads\Proyecto Progra 3.1Jueves\Proyecto Progra 3\bin\Debug\Entidades.dll
+C:\Users\Jhaser\Downloads\Proyecto Progra 3.1Jueves\Proyecto Progra 3\bin\Debug\Entidades.pdb
+C:\Users\Jhaser\Downloads\Proyecto Progra 3.1Jueves\Proyecto Progra 3\bin\Debug\Entidades.dll.config
+C:\Users\Jhaser\Downloads\Proyecto Progra 3.1Jueves\Proyecto Progra 3\obj\Debug\AccesoDatos.csprojResolveAssemblyReference.cache
+C:\Users\Jhaser\Downloads\Proyecto Progra 3.1Jueves\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CoreCompileInputs.cache
+C:\Users\Jhaser\Downloads\Proyecto Progra 3.1Jueves\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.dll
+C:\Users\Jhaser\Downloads\Proyecto Progra 3.1Jueves\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.pdb
+D:\Users\Josue\Desktop\Proyecto Progra 3.1Jueves\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll.config
+D:\Users\Josue\Desktop\Proyecto Progra 3.1Jueves\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll
+D:\Users\Josue\Desktop\Proyecto Progra 3.1Jueves\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.pdb
+D:\Users\Josue\Desktop\Proyecto Progra 3.1Jueves\Proyecto Progra 3\bin\Debug\Entidades.dll
+D:\Users\Josue\Desktop\Proyecto Progra 3.1Jueves\Proyecto Progra 3\bin\Debug\Entidades.pdb
+D:\Users\Josue\Desktop\Proyecto Progra 3.1Jueves\Proyecto Progra 3\bin\Debug\Entidades.dll.config
+D:\Users\Josue\Desktop\Proyecto Progra 3.1Jueves\Proyecto Progra 3\obj\Debug\AccesoDatos.csprojAssemblyReference.cache
+D:\Users\Josue\Desktop\Proyecto Progra 3.1Jueves\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CoreCompileInputs.cache
+D:\Users\Josue\Desktop\Proyecto Progra 3.1Jueves\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CopyComplete
+D:\Users\Josue\Desktop\Proyecto Progra 3.1Jueves\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.dll
+D:\Users\Josue\Desktop\Proyecto Progra 3.1Jueves\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.pdb
+C:\Users\cavu9\Downloads\Proyecto Progra 3.1Jueves\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll.config
+C:\Users\cavu9\Downloads\Proyecto Progra 3.1Jueves\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll
+C:\Users\cavu9\Downloads\Proyecto Progra 3.1Jueves\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.pdb
+C:\Users\cavu9\Downloads\Proyecto Progra 3.1Jueves\Proyecto Progra 3\bin\Debug\Entidades.dll
+C:\Users\cavu9\Downloads\Proyecto Progra 3.1Jueves\Proyecto Progra 3\bin\Debug\Entidades.pdb
+C:\Users\cavu9\Downloads\Proyecto Progra 3.1Jueves\Proyecto Progra 3\bin\Debug\Entidades.dll.config
+C:\Users\cavu9\Downloads\Proyecto Progra 3.1Jueves\Proyecto Progra 3\obj\Debug\AccesoDatos.csprojAssemblyReference.cache
+C:\Users\cavu9\Downloads\Proyecto Progra 3.1Jueves\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CoreCompileInputs.cache
+C:\Users\cavu9\Downloads\Proyecto Progra 3.1Jueves\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CopyComplete
+C:\Users\cavu9\Downloads\Proyecto Progra 3.1Jueves\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.dll
+C:\Users\cavu9\Downloads\Proyecto Progra 3.1Jueves\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.pdb
+C:\Users\Jhaser\Downloads\viernes 27\SistemaGrua\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll.config
+C:\Users\Jhaser\Downloads\viernes 27\SistemaGrua\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll
+C:\Users\Jhaser\Downloads\viernes 27\SistemaGrua\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.pdb
+C:\Users\Jhaser\Downloads\viernes 27\SistemaGrua\Proyecto Progra 3\bin\Debug\Entidades.dll
+C:\Users\Jhaser\Downloads\viernes 27\SistemaGrua\Proyecto Progra 3\bin\Debug\Entidades.pdb
+C:\Users\Jhaser\Downloads\viernes 27\SistemaGrua\Proyecto Progra 3\bin\Debug\Entidades.dll.config
+C:\Users\Jhaser\Downloads\viernes 27\SistemaGrua\Proyecto Progra 3\obj\Debug\AccesoDatos.csprojResolveAssemblyReference.cache
+C:\Users\Jhaser\Downloads\viernes 27\SistemaGrua\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CoreCompileInputs.cache
+C:\Users\Jhaser\Downloads\viernes 27\SistemaGrua\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.dll
+C:\Users\Jhaser\Downloads\viernes 27\SistemaGrua\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.pdb
+D:\Users\Josue\Downloads\viernes 27\SistemaGrua\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll.config
+D:\Users\Josue\Downloads\viernes 27\SistemaGrua\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll
+D:\Users\Josue\Downloads\viernes 27\SistemaGrua\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.pdb
+D:\Users\Josue\Downloads\viernes 27\SistemaGrua\Proyecto Progra 3\bin\Debug\Entidades.dll
+D:\Users\Josue\Downloads\viernes 27\SistemaGrua\Proyecto Progra 3\bin\Debug\Entidades.pdb
+D:\Users\Josue\Downloads\viernes 27\SistemaGrua\Proyecto Progra 3\bin\Debug\Entidades.dll.config
+D:\Users\Josue\Downloads\viernes 27\SistemaGrua\Proyecto Progra 3\obj\Debug\AccesoDatos.csprojAssemblyReference.cache
+D:\Users\Josue\Downloads\viernes 27\SistemaGrua\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CoreCompileInputs.cache
+D:\Users\Josue\Downloads\viernes 27\SistemaGrua\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CopyComplete
+D:\Users\Josue\Downloads\viernes 27\SistemaGrua\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.dll
+D:\Users\Josue\Downloads\viernes 27\SistemaGrua\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.pdb
+D:\Users\Josue\Desktop\viernes 27\SistemaGrua\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll.config
+D:\Users\Josue\Desktop\viernes 27\SistemaGrua\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll
+D:\Users\Josue\Desktop\viernes 27\SistemaGrua\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.pdb
+D:\Users\Josue\Desktop\viernes 27\SistemaGrua\Proyecto Progra 3\bin\Debug\Entidades.dll
+D:\Users\Josue\Desktop\viernes 27\SistemaGrua\Proyecto Progra 3\bin\Debug\Entidades.pdb
+D:\Users\Josue\Desktop\viernes 27\SistemaGrua\Proyecto Progra 3\bin\Debug\Entidades.dll.config
+D:\Users\Josue\Desktop\viernes 27\SistemaGrua\Proyecto Progra 3\obj\Debug\AccesoDatos.csprojAssemblyReference.cache
+D:\Users\Josue\Desktop\viernes 27\SistemaGrua\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CoreCompileInputs.cache
+D:\Users\Josue\Desktop\viernes 27\SistemaGrua\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CopyComplete
+D:\Users\Josue\Desktop\viernes 27\SistemaGrua\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.dll
+D:\Users\Josue\Desktop\viernes 27\SistemaGrua\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.pdb
+C:\Users\cavu9\OneDrive\Escritorio\f\viernes 27\SistemaGrua\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll.config
+C:\Users\cavu9\OneDrive\Escritorio\f\viernes 27\SistemaGrua\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll
+C:\Users\cavu9\OneDrive\Escritorio\f\viernes 27\SistemaGrua\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.pdb
+C:\Users\cavu9\OneDrive\Escritorio\f\viernes 27\SistemaGrua\Proyecto Progra 3\bin\Debug\Entidades.dll
+C:\Users\cavu9\OneDrive\Escritorio\f\viernes 27\SistemaGrua\Proyecto Progra 3\bin\Debug\Entidades.pdb
+C:\Users\cavu9\OneDrive\Escritorio\f\viernes 27\SistemaGrua\Proyecto Progra 3\bin\Debug\Entidades.dll.config
+C:\Users\cavu9\OneDrive\Escritorio\f\viernes 27\SistemaGrua\Proyecto Progra 3\obj\Debug\AccesoDatos.csprojAssemblyReference.cache
+C:\Users\cavu9\OneDrive\Escritorio\f\viernes 27\SistemaGrua\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CoreCompileInputs.cache
+C:\Users\cavu9\OneDrive\Escritorio\f\viernes 27\SistemaGrua\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CopyComplete
+C:\Users\cavu9\OneDrive\Escritorio\f\viernes 27\SistemaGrua\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.dll
+C:\Users\cavu9\OneDrive\Escritorio\f\viernes 27\SistemaGrua\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.pdb
+C:\Users\cavu9\OneDrive\Documentos\UAM\Progra3\Proyecto1\ProyectoSistemaDeGruasProgramación3\SistemaGrua\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll.config
+C:\Users\cavu9\OneDrive\Documentos\UAM\Progra3\Proyecto1\ProyectoSistemaDeGruasProgramación3\SistemaGrua\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll
+C:\Users\cavu9\OneDrive\Documentos\UAM\Progra3\Proyecto1\ProyectoSistemaDeGruasProgramación3\SistemaGrua\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.pdb
+C:\Users\cavu9\OneDrive\Documentos\UAM\Progra3\Proyecto1\ProyectoSistemaDeGruasProgramación3\SistemaGrua\Proyecto Progra 3\bin\Debug\Entidades.dll
+C:\Users\cavu9\OneDrive\Documentos\UAM\Progra3\Proyecto1\ProyectoSistemaDeGruasProgramación3\SistemaGrua\Proyecto Progra 3\bin\Debug\Entidades.pdb
+C:\Users\cavu9\OneDrive\Documentos\UAM\Progra3\Proyecto1\ProyectoSistemaDeGruasProgramación3\SistemaGrua\Proyecto Progra 3\bin\Debug\Entidades.dll.config
+C:\Users\cavu9\OneDrive\Documentos\UAM\Progra3\Proyecto1\ProyectoSistemaDeGruasProgramación3\SistemaGrua\Proyecto Progra 3\obj\Debug\AccesoDatos.csprojAssemblyReference.cache
+C:\Users\cavu9\OneDrive\Documentos\UAM\Progra3\Proyecto1\ProyectoSistemaDeGruasProgramación3\SistemaGrua\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CoreCompileInputs.cache
+C:\Users\cavu9\OneDrive\Documentos\UAM\Progra3\Proyecto1\ProyectoSistemaDeGruasProgramación3\SistemaGrua\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CopyComplete
+C:\Users\cavu9\OneDrive\Documentos\UAM\Progra3\Proyecto1\ProyectoSistemaDeGruasProgramación3\SistemaGrua\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.dll
+C:\Users\cavu9\OneDrive\Documentos\UAM\Progra3\Proyecto1\ProyectoSistemaDeGruasProgramación3\SistemaGrua\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.pdb
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto2\SistemaHospital\Proyecto Progra 3\obj\Debug\AccesoDatos.csprojAssemblyReference.cache
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto2\SistemaHospital\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CoreCompileInputs.cache
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto2\SistemaHospital\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.dll
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto2\SistemaHospital\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.pdb
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto2\SistemaHospital\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll.config
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto2\SistemaHospital\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto2\SistemaHospital\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.pdb
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto2\SistemaHospital\Proyecto Progra 3\bin\Debug\Entidades.dll
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto2\SistemaHospital\Proyecto Progra 3\bin\Debug\EntityFramework.dll
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto2\SistemaHospital\Proyecto Progra 3\bin\Debug\Entidades.pdb
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto2\SistemaHospital\Proyecto Progra 3\bin\Debug\Entidades.dll.config
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto2\SistemaHospital\Proyecto Progra 3\bin\Debug\EntityFramework.xml
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto2\SistemaHospital\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CopyComplete
