@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Entidades;
 using Logica;
+using Presentacion.Camilla;
 
 
 namespace Presentacion
@@ -138,6 +139,13 @@ namespace Presentacion
         private void cerrarElSistemaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void camillaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            camilla cam = new camilla();
+            cam.MdiParent = this.MdiParent;
+            cam.Show();
         }
     }
 }

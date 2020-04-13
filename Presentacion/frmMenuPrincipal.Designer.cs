@@ -31,10 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMenuPrincipal));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.sistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.procesosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.tsslUsuarioConectado = new System.Windows.Forms.ToolStripStatusLabel();
             this.pacienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.trabajadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.camillaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,6 +39,10 @@
             this.perfilToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.especialidadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cerrarElSistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.procesosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.tsslUsuarioConectado = new System.Windows.Forms.ToolStripStatusLabel();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -76,35 +76,6 @@
             this.sistemaToolStripMenuItem.Text = "Sistema";
             this.sistemaToolStripMenuItem.Click += new System.EventHandler(this.sistemaToolStripMenuItem_Click);
             // 
-            // consultasToolStripMenuItem
-            // 
-            this.consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
-            this.consultasToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
-            this.consultasToolStripMenuItem.Text = "Consultas";
-            // 
-            // procesosToolStripMenuItem
-            // 
-            this.procesosToolStripMenuItem.Name = "procesosToolStripMenuItem";
-            this.procesosToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
-            this.procesosToolStripMenuItem.Text = "Procesos";
-            // 
-            // statusStrip1
-            // 
-            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsslUsuarioConectado});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 428);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(800, 22);
-            this.statusStrip1.TabIndex = 2;
-            this.statusStrip1.Text = "Usuario conectado:";
-            // 
-            // tsslUsuarioConectado
-            // 
-            this.tsslUsuarioConectado.Name = "tsslUsuarioConectado";
-            this.tsslUsuarioConectado.Size = new System.Drawing.Size(109, 17);
-            this.tsslUsuarioConectado.Text = "Usuario conectado:";
-            // 
             // pacienteToolStripMenuItem
             // 
             this.pacienteToolStripMenuItem.Name = "pacienteToolStripMenuItem";
@@ -122,6 +93,7 @@
             this.camillaToolStripMenuItem.Name = "camillaToolStripMenuItem";
             this.camillaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.camillaToolStripMenuItem.Text = "Camilla";
+            this.camillaToolStripMenuItem.Click += new System.EventHandler(this.camillaToolStripMenuItem_Click);
             // 
             // salaToolStripMenuItem
             // 
@@ -153,6 +125,35 @@
             this.cerrarElSistemaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cerrarElSistemaToolStripMenuItem.Text = "Cerrar el Sistema";
             this.cerrarElSistemaToolStripMenuItem.Click += new System.EventHandler(this.cerrarElSistemaToolStripMenuItem_Click);
+            // 
+            // consultasToolStripMenuItem
+            // 
+            this.consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
+            this.consultasToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.consultasToolStripMenuItem.Text = "Consultas";
+            // 
+            // procesosToolStripMenuItem
+            // 
+            this.procesosToolStripMenuItem.Name = "procesosToolStripMenuItem";
+            this.procesosToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+            this.procesosToolStripMenuItem.Text = "Procesos";
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsslUsuarioConectado});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 428);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(800, 22);
+            this.statusStrip1.TabIndex = 2;
+            this.statusStrip1.Text = "Usuario conectado:";
+            // 
+            // tsslUsuarioConectado
+            // 
+            this.tsslUsuarioConectado.Name = "tsslUsuarioConectado";
+            this.tsslUsuarioConectado.Size = new System.Drawing.Size(109, 17);
+            this.tsslUsuarioConectado.Text = "Usuario conectado:";
             // 
             // frmMenuPrincipal
             // 
