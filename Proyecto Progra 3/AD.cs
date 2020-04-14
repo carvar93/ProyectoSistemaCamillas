@@ -160,6 +160,48 @@ namespace AccesoDatos
 
 
 
+        #region Camilla
+
+        public List<Camilla> consultarCamillas(SQLSentencia peticion)
+        {
+            List<Camilla> listaResultado = new List<Camilla>();
+            DataTable dt = new DataTable();
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = objconexion;
+                cmd.CommandType = System.Data.CommandType.Text;
+                cmd.CommandText = peticion.Peticion;
+                if (peticion.lstParametros.Count > 0)
+                    cmd.Parameters.AddRange(peticion.lstParametros.ToArray());
+                SqlDataAdapter objCaptura = new SqlDataAdapter(cmd);
+                objCaptura.Fill(dt);
+                if (dt.Rows.Count > 0)
+                    foreach (DataRow item in dt.Rows)
+                    {
+                        Camilla camilla = new Camilla();
+                        camilla.NumeroCamilla = (int)item.ItemArray[0];
+                        camilla.estadoCamilla = item.ItemArray[1].ToString();
+                        listaResultado.Add(camilla);
+
+                    }
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                this.CERRAR();
+            }
+            return listaResultado;
+        }
+
+
+        #endregion
+
+
         public Usuario ConsultarAutenticacion(SQLSentencia P_Peticion)
         {
             Usuario resultado = new Usuario();
