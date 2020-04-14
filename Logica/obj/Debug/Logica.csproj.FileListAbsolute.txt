@@ -397,3 +397,18 @@ C:\Users\cavu9\OneDrive\Escritorio\Proyecto2\SistemaHospital\Logica\bin\Debug\Pr
 C:\Users\cavu9\OneDrive\Escritorio\Proyecto2\SistemaHospital\Logica\bin\Debug\Proyecto Progra 3.dll.config
 C:\Users\cavu9\OneDrive\Escritorio\Proyecto2\SistemaHospital\Logica\bin\Debug\EntityFramework.xml
 C:\Users\cavu9\OneDrive\Escritorio\Proyecto2\SistemaHospital\Logica\obj\Debug\Logica.csproj.CopyComplete
+C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Logica\bin\Debug\Logica.dll
+C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Logica\bin\Debug\Logica.pdb
+C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Logica\bin\Debug\Entidades.dll
+C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Logica\bin\Debug\Proyecto Progra 3.dll
+C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Logica\bin\Debug\EntityFramework.dll
+C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Logica\bin\Debug\Entidades.pdb
+C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Logica\bin\Debug\Entidades.dll.config
+C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Logica\bin\Debug\Proyecto Progra 3.pdb
+C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Logica\bin\Debug\Proyecto Progra 3.dll.config
+C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Logica\bin\Debug\EntityFramework.xml
+C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Logica\obj\Debug\Logica.csprojAssemblyReference.cache
+C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Logica\obj\Debug\Logica.csproj.CoreCompileInputs.cache
+C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Logica\obj\Debug\Logica.csproj.CopyComplete
+C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Logica\obj\Debug\Logica.dll
+C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Logica\obj\Debug\Logica.pdb

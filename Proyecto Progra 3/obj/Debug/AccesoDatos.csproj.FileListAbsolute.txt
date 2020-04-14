@@ -294,3 +294,16 @@ C:\Users\cavu9\OneDrive\Escritorio\Proyecto2\SistemaHospital\Proyecto Progra 3\b
 C:\Users\cavu9\OneDrive\Escritorio\Proyecto2\SistemaHospital\Proyecto Progra 3\bin\Debug\Entidades.dll.config
 C:\Users\cavu9\OneDrive\Escritorio\Proyecto2\SistemaHospital\Proyecto Progra 3\bin\Debug\EntityFramework.xml
 C:\Users\cavu9\OneDrive\Escritorio\Proyecto2\SistemaHospital\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CopyComplete
+C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll.config
+C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll
+C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.pdb
+C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Proyecto Progra 3\bin\Debug\Entidades.dll
+C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Proyecto Progra 3\bin\Debug\EntityFramework.dll
+C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Proyecto Progra 3\bin\Debug\Entidades.pdb
+C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Proyecto Progra 3\bin\Debug\Entidades.dll.config
+C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Proyecto Progra 3\bin\Debug\EntityFramework.xml
+C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Proyecto Progra 3\obj\Debug\AccesoDatos.csprojAssemblyReference.cache
+C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CoreCompileInputs.cache
+C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CopyComplete
+C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.dll
+C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.pdb

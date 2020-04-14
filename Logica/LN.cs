@@ -669,19 +669,19 @@ namespace Logica
         /// </summary>
         /// <param name="c"></param>
         /// <returns></returns>
-        public static bool modificarCamillas(Camilla c) {
+        public static bool modificarCamillas(int id,string ne) {
             try {
                 SQLSentencia sentencia = new SQLSentencia();
-                sentencia.Peticion = @"EXEC PA_ModificarCamilla @Nc,@e";
+                sentencia.Peticion = @"EXEC PA_ModificarCamilla @Nc, @ne";
 
                 SqlParameter paramNumCamilla = new SqlParameter();
-                paramNumCamilla.Value = c.NumeroCamilla;
+                paramNumCamilla.Value = id;
                 paramNumCamilla.ParameterName = "@Nc";
                 paramNumCamilla.SqlDbType = System.Data.SqlDbType.Int;
 
                 SqlParameter paramEstCamilla = new SqlParameter();
-                paramEstCamilla.Value = c.estadoCamilla;
-                paramEstCamilla.ParameterName = "@e";
+                paramEstCamilla.Value = ne;
+                paramEstCamilla.ParameterName = "@ne";
                 paramEstCamilla.SqlDbType = System.Data.SqlDbType.VarChar;
 
                 sentencia.lstParametros.Add(paramNumCamilla);
@@ -738,7 +738,7 @@ namespace Logica
                 paramC.SqlDbType = System.Data.SqlDbType.VarChar;
                 sentencia.lstParametros.Add(paramC);
                 AD acceso = new AD();
-                return acceso.consultarChoferes(sentencia);
+                return acceso.consultarCamillas(sentencia);
             }
             catch (Exception)
             {
