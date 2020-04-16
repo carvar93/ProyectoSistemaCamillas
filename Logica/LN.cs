@@ -745,7 +745,36 @@ namespace Logica
                 throw;
             }
         }
-            #endregion
+        #endregion
+
+        #region Sala
+       public static bool agregarSala(Sala s) {
+
+            try
+            {
+                SQLSentencia sentencia = new SQLSentencia();
+                sentencia.Peticion = "@exect PA_AgregarSala @nom";
+                SqlParameter paramSala = new SqlParameter();
+                paramSala.Value = s.nombre;
+                paramSala.ParameterName = "@nom";
+                paramSala.SqlDbType = System.Data.SqlDbType.VarChar;
+                sentencia.lstParametros.Add(paramSala);
+                AD acceso = new AD();
+                return acceso
+
+
+
+
+            }
+            catch (Exception e) {
+                throw e;
+            }
 
         }
+
+
+
+        #endregion
+
+    }
 }

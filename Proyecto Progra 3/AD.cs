@@ -304,6 +304,53 @@ namespace AccesoDatos
         }
 
 
+        #region Sala
+
+
+        public List<Sala> consultarSala(SQLSentencia peticion) {
+            List<Sala> listaResultado = new List<Sala>();
+            DataTable dt = new DataTable();
+
+            try {
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = objconexion;
+                cmd.CommandType = System.Data.CommandType.Text;
+                cmd.CommandText = peticion.Peticion;
+                if (peticion.lstParametros.Count > 0)
+                    cmd.Parameters.AddRange(peticion.lstParametros.ToArray());
+                SqlDataAdapter objCaptura = new SqlDataAdapter(cmd);
+                objCaptura.Fill(dt);
+                if (dt.Rows.Count > 0) 
+                    foreach (DataRow item in dt.Rows) {
+                        Sala sala = new Sala();
+                        sala.idSala = (int)item.ItemArray[0];
+                        sala.nombre = item.ItemArray[1].ToString();
+                        sala.cantidadCamillas = (int)item.ItemArray[2];
+                        listaResultado.Add(sala);
+
+                    }
+                
+            }
+            catch (Exception e) {
+                throw e;
+            }
+            finally {
+                this.CERRAR();
+            }
+
+            return listaResultado;
+        }
+
+
+
+
+
+
+
+
+        #endregion
+
+
 
         /// <summary>
         /// Metodo para consultar los perfiles del usuario autenticado
