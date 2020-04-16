@@ -91,3 +91,15 @@ C:\Users\cavu9\OneDrive\Escritorio\Proyecto2\SistemaHospital\Entidades\obj\Debug
 C:\Users\cavu9\OneDrive\Escritorio\Proyecto2\SistemaHospital\Entidades\obj\Debug\Entidades.csproj.CopyComplete
 C:\Users\cavu9\OneDrive\Escritorio\Proyecto2\SistemaHospital\Entidades\obj\Debug\Entidades.dll
 C:\Users\cavu9\OneDrive\Escritorio\Proyecto2\SistemaHospital\Entidades\obj\Debug\Entidades.pdb
+C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Entidades\bin\Debug\Entidades.dll.config
+C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Entidades\bin\Debug\Entidades.dll
+C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Entidades\bin\Debug\Entidades.pdb
+C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Entidades\bin\Debug\EntityFramework.dll
+C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Entidades\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Entidades\bin\Debug\EntityFramework.xml
+C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Entidades\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Entidades\obj\Debug\Entidades.csproj.CopyComplete
+C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Entidades\obj\Debug\Entidades.dll
+C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Entidades\obj\Debug\Entidades.pdb

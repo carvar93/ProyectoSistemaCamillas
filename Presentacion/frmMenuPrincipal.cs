@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Entidades;
 using Logica;
 using Presentacion.Camilla;
+using Presentacion.Sala;
 
 
 namespace Presentacion
@@ -146,6 +147,14 @@ namespace Presentacion
             camilla cam = new camilla();
             cam.MdiParent = this.MdiParent;
             cam.Show();
+        }
+
+        private void salaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            sala s = new sala();
+            s.MdiParent = this.MdiParent;
+            s.Show();
+
         }
     }
 }

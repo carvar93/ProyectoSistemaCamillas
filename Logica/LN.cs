@@ -748,22 +748,139 @@ namespace Logica
         #endregion
 
         #region Sala
-       public static bool agregarSala(Sala s) {
+
+        #region AgregarSala
+        public static bool agregarSala(Sala s) {
 
             try
             {
                 SQLSentencia sentencia = new SQLSentencia();
-                sentencia.Peticion = "@exect PA_AgregarSala @nom";
-                SqlParameter paramSala = new SqlParameter();
-                paramSala.Value = s.nombre;
-                paramSala.ParameterName = "@nom";
-                paramSala.SqlDbType = System.Data.SqlDbType.VarChar;
-                sentencia.lstParametros.Add(paramSala);
+                sentencia.Peticion = @" EXEC PA_AgregarSala @nom ,@c";
+
+                SqlParameter paramn = new SqlParameter();
+                paramn.Value = s.nombre;
+                paramn.ParameterName = "@nom";
+                paramn.SqlDbType = System.Data.SqlDbType.VarChar;
+
+                SqlParameter paramc = new SqlParameter();
+                paramc.Value = s.cantidadCamillas;
+                paramc.ParameterName = "@c";
+                paramc.SqlDbType = System.Data.SqlDbType.Int;
+
+
+                sentencia.lstParametros.Add(paramn);
+                sentencia.lstParametros.Add(paramc);
+
                 AD acceso = new AD();
-                return acceso
+                return acceso.ejecutarSentecia(sentencia);
+                
+            }
+            catch (Exception e) {
+                throw e;
+            }
+
+        }
+        #endregion
+
+        #region modificar Cantidad de Camillas
+        public static bool modificarCantidadCamillas(Sala s)
+        {
+            try
+            {
+                SQLSentencia sentencia = new SQLSentencia();
+                sentencia.Peticion = @"EXEC PA_ModificarCamilla @ne, @nom";
+
+                SqlParameter paramidsala = new SqlParameter();
+                paramidsala.Value = s.idSala;
+                paramidsala.ParameterName = "@ne";
+                paramidsala.SqlDbType = System.Data.SqlDbType.Int;
+
+                SqlParameter paramnomSala = new SqlParameter();
+                paramnomSala.Value = s.nombre;
+                paramnomSala.ParameterName = "@nom";
+                paramnomSala.SqlDbType = System.Data.SqlDbType.VarChar;
+
+                sentencia.lstParametros.Add(paramidsala);
+                sentencia.lstParametros.Add(paramnomSala);
+                AD acceso = new AD();
+                return acceso.ejecutarSentecia(sentencia);
+
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
 
 
+        }
+        #endregion
 
+        #region modificar Sala
+        public static bool modificarSala(Sala s) {
+            try
+            {
+                SQLSentencia se = new SQLSentencia();
+                se.Peticion= @"EXEC PA_ModificarSala @nom,@i";
+
+                SqlParameter paramnom = new SqlParameter();
+                paramnom.Value = s.nombre;
+                paramnom.ParameterName="nom";
+                paramnom.SqlDbType = System.Data.SqlDbType.VarChar;
+
+                SqlParameter paramid = new SqlParameter();
+                paramid.Value = s.idSala;
+                paramid.ParameterName = "@i";
+                paramid.SqlDbType = System.Data.SqlDbType.Int;
+
+                se.lstParametros.Add(paramnom);
+               se.lstParametros.Add(paramid);
+                AD acceso = new AD();
+                return acceso.ejecutarSentecia(se);
+
+
+            }
+            catch(Exception e) {
+                throw e;
+            }
+
+
+        }
+        #endregion
+
+        #region eliminar Sala
+        public static bool eliminarSala(Sala s) {
+            try {
+                SQLSentencia sentencia = new SQLSentencia();
+                sentencia.Peticion= @"EXEC PA_EliminarSala @nom";
+                SqlParameter ids = new SqlParameter();
+                ids.Value = s.nombre;
+                ids.ParameterName = "@nom";
+                ids.SqlDbType = System.Data.SqlDbType.VarChar;
+                sentencia.lstParametros.Add(ids);
+                AD acceso = new AD();
+                return acceso.ejecutarSentecia(sentencia);
+
+            }
+            catch (Exception e) {
+                throw e;
+            }
+           
+        }
+        #endregion
+
+        #region consultar Sala
+        public static List<Sala>consultarSala(Sala s) {
+            try {
+                SQLSentencia sentencia = new SQLSentencia();
+                sentencia.Peticion= @"EXEC PA_ConsultarSala @nomb";
+
+                SqlParameter nom = new SqlParameter();
+                nom.Value = s.nombre;
+                nom.ParameterName = "@nomb";
+                nom.SqlDbType = System.Data.SqlDbType.VarChar;
+                sentencia.lstParametros.Add(nom);
+                AD ac = new AD();
+                 return ac.consultarSala(sentencia);
 
             }
             catch (Exception e) {
@@ -772,9 +889,12 @@ namespace Logica
 
         }
 
+        #endregion
+
 
 
         #endregion
+
 
     }
 }

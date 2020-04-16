@@ -77,7 +77,7 @@
             // 
             // eliminarCamillabtn
             // 
-            this.eliminarCamillabtn.Location = new System.Drawing.Point(315, 162);
+            this.eliminarCamillabtn.Location = new System.Drawing.Point(315, 239);
             this.eliminarCamillabtn.Name = "eliminarCamillabtn";
             this.eliminarCamillabtn.Size = new System.Drawing.Size(75, 23);
             this.eliminarCamillabtn.TabIndex = 5;
@@ -87,7 +87,7 @@
             // 
             // modificarCamillabtn
             // 
-            this.modificarCamillabtn.Location = new System.Drawing.Point(173, 162);
+            this.modificarCamillabtn.Location = new System.Drawing.Point(173, 239);
             this.modificarCamillabtn.Name = "modificarCamillabtn";
             this.modificarCamillabtn.Size = new System.Drawing.Size(75, 23);
             this.modificarCamillabtn.TabIndex = 6;
@@ -100,7 +100,7 @@
             this.CamilladataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.CamilladataGridView1.Location = new System.Drawing.Point(173, 15);
             this.CamilladataGridView1.Name = "CamilladataGridView1";
-            this.CamilladataGridView1.Size = new System.Drawing.Size(217, 121);
+            this.CamilladataGridView1.Size = new System.Drawing.Size(217, 218);
             this.CamilladataGridView1.TabIndex = 7;
             this.CamilladataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CamilladataGridView1_CellClick);
             this.CamilladataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CamilladataGridView1_CellContentClick);
@@ -117,7 +117,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(402, 197);
+            this.ClientSize = new System.Drawing.Size(402, 298);
             this.Controls.Add(this.camillaEstadocbo);
             this.Controls.Add(this.CamilladataGridView1);
             this.Controls.Add(this.modificarCamillabtn);

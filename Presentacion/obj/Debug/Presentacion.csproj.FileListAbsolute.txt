@@ -42,3 +42,4 @@ C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Presentacion\obj\Debu
 C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete
 C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Presentacion\obj\Debug\Presentacion.exe
 C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Presentacion\obj\Debug\Presentacion.pdb
+C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Presentacion\obj\Debug\Presentacion.Sala.sala.resources
