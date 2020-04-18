@@ -43,3 +43,27 @@ C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Presentacion\obj\Debu
 C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Presentacion\obj\Debug\Presentacion.exe
 C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Presentacion\obj\Debug\Presentacion.pdb
 C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Presentacion\obj\Debug\Presentacion.Sala.sala.resources
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto2Progra3\ProyectoSistemaCamillas\Presentacion\obj\Debug\Presentacion.csprojAssemblyReference.cache
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto2Progra3\ProyectoSistemaCamillas\Presentacion\obj\Debug\Presentacion.Camilla.camilla.resources
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto2Progra3\ProyectoSistemaCamillas\Presentacion\obj\Debug\Presentacion.frmLogin.resources
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto2Progra3\ProyectoSistemaCamillas\Presentacion\obj\Debug\Presentacion.frmMenuPrincipal.resources
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto2Progra3\ProyectoSistemaCamillas\Presentacion\obj\Debug\Presentacion.Properties.Resources.resources
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto2Progra3\ProyectoSistemaCamillas\Presentacion\obj\Debug\Presentacion.Sala.sala.resources
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto2Progra3\ProyectoSistemaCamillas\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.cache
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto2Progra3\ProyectoSistemaCamillas\Presentacion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto2Progra3\ProyectoSistemaCamillas\Presentacion\obj\Debug\Presentacion.exe
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto2Progra3\ProyectoSistemaCamillas\Presentacion\obj\Debug\Presentacion.pdb
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto2Progra3\ProyectoSistemaCamillas\Presentacion\bin\Debug\Presentacion.exe.config
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto2Progra3\ProyectoSistemaCamillas\Presentacion\bin\Debug\Presentacion.exe
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto2Progra3\ProyectoSistemaCamillas\Presentacion\bin\Debug\Presentacion.pdb
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto2Progra3\ProyectoSistemaCamillas\Presentacion\bin\Debug\Entidades.dll
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto2Progra3\ProyectoSistemaCamillas\Presentacion\bin\Debug\Logica.dll
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto2Progra3\ProyectoSistemaCamillas\Presentacion\bin\Debug\EntityFramework.dll
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto2Progra3\ProyectoSistemaCamillas\Presentacion\bin\Debug\Proyecto Progra 3.dll
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto2Progra3\ProyectoSistemaCamillas\Presentacion\bin\Debug\Entidades.pdb
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto2Progra3\ProyectoSistemaCamillas\Presentacion\bin\Debug\Entidades.dll.config
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto2Progra3\ProyectoSistemaCamillas\Presentacion\bin\Debug\Logica.pdb
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto2Progra3\ProyectoSistemaCamillas\Presentacion\bin\Debug\EntityFramework.xml
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto2Progra3\ProyectoSistemaCamillas\Presentacion\bin\Debug\Proyecto Progra 3.pdb
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto2Progra3\ProyectoSistemaCamillas\Presentacion\bin\Debug\Proyecto Progra 3.dll.config
+C:\Users\cavu9\OneDrive\Escritorio\Proyecto2Progra3\ProyectoSistemaCamillas\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete

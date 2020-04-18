@@ -18,12 +18,14 @@ namespace Presentacion.Sala
     public partial class sala : Form
     {
         private int idS =0;
+        private int idC = 0;
 
 
         public sala()
         {
             InitializeComponent();
             this.cargarDatagrid();
+            cargarDatagridCamillas();
         }
 
 
@@ -36,6 +38,21 @@ namespace Presentacion.Sala
 
 
         }
+
+        public void cargarDatagridCamillas()
+        {
+
+            List<Entidades.Camilla> ls = LN.ConsultaCamillaPorEstado("Vacio");
+            this.camillasParaAsigdataGridView.DataSource = null;
+            this.camillasParaAsigdataGridView.Refresh();
+            this.camillasParaAsigdataGridView.DataSource = ls;
+            this.camillasParaAsigdataGridView.Refresh();
+            
+
+
+        }
+
+
 
         private void SaladataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -124,6 +141,26 @@ namespace Presentacion.Sala
             catch (Exception es) {
                 throw es;
             }
+        }
+
+        private void agregarCamillasbutton_Click(object sender, EventArgs e)
+        {
+            try {
+                LN.agregaCamillaSala(this.idS, this.idC);
+                LN.modificarCamillas(idC, "Ocupado");
+                MessageBox.Show("Camilla asignada", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.cargarDatagridCamillas();
+                idS = 0;
+                idC = 0;
+            }
+            catch (Exception ecs) {
+                throw ecs;
+            }
+        }
+
+        private void camillasParaAsigdataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            this.idC = Int32.Parse(camillasParaAsigdataGridView.Rows[e.RowIndex].Cells[0].Value.ToString());
         }
     }
 }

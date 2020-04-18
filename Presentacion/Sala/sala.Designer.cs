@@ -35,11 +35,11 @@
             this.eliminarSalabtn = new System.Windows.Forms.Button();
             this.SaladataGridView = new System.Windows.Forms.DataGridView();
             this.salagroupBox = new System.Windows.Forms.GroupBox();
+            this.agregarCamillasbutton = new System.Windows.Forms.Button();
             this.camillasParaAsigdataGridView = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.busquedaSalatextBox = new System.Windows.Forms.TextBox();
             this.buscarbtn = new System.Windows.Forms.Button();
-            this.agregarCamillasbutton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.SaladataGridView)).BeginInit();
             this.salagroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.camillasParaAsigdataGridView)).BeginInit();
@@ -112,13 +112,24 @@
             this.salagroupBox.TabStop = false;
             this.salagroupBox.Text = "Agregar Camillas";
             // 
+            // agregarCamillasbutton
+            // 
+            this.agregarCamillasbutton.Location = new System.Drawing.Point(194, 85);
+            this.agregarCamillasbutton.Name = "agregarCamillasbutton";
+            this.agregarCamillasbutton.Size = new System.Drawing.Size(64, 26);
+            this.agregarCamillasbutton.TabIndex = 12;
+            this.agregarCamillasbutton.Text = "Agregar";
+            this.agregarCamillasbutton.UseVisualStyleBackColor = true;
+            this.agregarCamillasbutton.Click += new System.EventHandler(this.agregarCamillasbutton_Click);
+            // 
             // camillasParaAsigdataGridView
             // 
             this.camillasParaAsigdataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.camillasParaAsigdataGridView.Location = new System.Drawing.Point(6, 19);
             this.camillasParaAsigdataGridView.Name = "camillasParaAsigdataGridView";
-            this.camillasParaAsigdataGridView.Size = new System.Drawing.Size(116, 165);
+            this.camillasParaAsigdataGridView.Size = new System.Drawing.Size(182, 165);
             this.camillasParaAsigdataGridView.TabIndex = 0;
+            this.camillasParaAsigdataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.camillasParaAsigdataGridView_CellClick);
             // 
             // label2
             // 
@@ -145,15 +156,6 @@
             this.buscarbtn.Text = "Buscar";
             this.buscarbtn.UseVisualStyleBackColor = true;
             this.buscarbtn.Click += new System.EventHandler(this.buscarbtn_Click);
-            // 
-            // agregarCamillasbutton
-            // 
-            this.agregarCamillasbutton.Location = new System.Drawing.Point(139, 81);
-            this.agregarCamillasbutton.Name = "agregarCamillasbutton";
-            this.agregarCamillasbutton.Size = new System.Drawing.Size(64, 26);
-            this.agregarCamillasbutton.TabIndex = 12;
-            this.agregarCamillasbutton.Text = "Agregar";
-            this.agregarCamillasbutton.UseVisualStyleBackColor = true;
             // 
             // sala
             // 

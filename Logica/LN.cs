@@ -415,92 +415,7 @@ namespace Logica
 
         }
 
-        // lista Condutor 
-        public static DataTable ListaCondutor()
-        {
-
-            try
-            {
-                //Construccion de instruccion de peticion a ejecutar - ELIMINAR
-                SQLSentencia peticion = new SQLSentencia();
-                peticion.Peticion = @"EXEC PA_GruaxChofer ";
-
-                AD objacceso = new AD();
-                //return objacceso.ejecutarSentecia(peticion); //Ejecucion de metodo en AD
-                return objacceso.consultarUsuariosYPerfilPorEstado(peticion);
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-
-
-        }
-
-        public static DataTable ConsultaCasaos(string u)
-        {
-
-            try
-            {
-                //Construccion de instruccion de peticion a ejecutar - ELIMINAR
-                SQLSentencia peticion = new SQLSentencia();
-                peticion.Peticion = @"EXEC PA_ListaCasosEstado '" + u + "'";
-
-                AD objacceso = new AD();
-                //return objacceso.ejecutarSentecia(peticion); //Ejecucion de metodo en AD
-                return objacceso.consultarUsuariosYPerfilPorEstado(peticion);
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-
-
-        }
-
-        // Consulta Ingreso de casos
-        public static DataTable ConsultaIngresiCasaos()
-        {
-
-            try
-            {
-                //Construccion de instruccion de peticion a ejecutar - ELIMINAR
-                SQLSentencia peticion = new SQLSentencia();
-                peticion.Peticion = @"EXEC PA_ListaIngresoCaso ";
-
-                AD objacceso = new AD();
-                //return objacceso.ejecutarSentecia(peticion); //Ejecucion de metodo en AD
-                return objacceso.consultarUsuariosYPerfilPorEstado(peticion);
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-
-
-        }
-
-        // Consulta Choferes
-        public static DataTable ConsultaChoferes()
-        {
-
-            try
-            {
-                //Construccion de instruccion de peticion a ejecutar - ELIMINAR
-                SQLSentencia peticion = new SQLSentencia();
-                peticion.Peticion = @"EXEC Pa_ListaIngresoChofer ";
-
-                AD objacceso = new AD();
-                //return objacceso.ejecutarSentecia(peticion); //Ejecucion de metodo en AD
-                return objacceso.consultarUsuariosYPerfilPorEstado(peticion);
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-
-
-        }
+       
         #endregion
         #endregion
         #region Metodos usuario
@@ -745,6 +660,28 @@ namespace Logica
                 throw;
             }
         }
+
+
+
+        public static List<Camilla> ConsultaCamillaPorEstado(string camilla)
+        {
+            try
+            {
+                SQLSentencia sentencia = new SQLSentencia();
+                sentencia.Peticion = @"EXEC PA_ConsultarCamilla @est";
+                SqlParameter paramC = new SqlParameter();
+                paramC.Value = camilla;
+                paramC.ParameterName = "@est";
+                paramC.SqlDbType = System.Data.SqlDbType.VarChar;
+                sentencia.lstParametros.Add(paramC);
+                AD acceso = new AD();
+                return acceso.consultarCamillas(sentencia);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
         #endregion
 
         #region Sala
@@ -891,7 +828,39 @@ namespace Logica
 
         #endregion
 
+        #region Agregar Camillas a la Sala
+        
+        public static bool agregaCamillaSala(int idS,int idC) {
+            try {
+                SQLSentencia sentencia = new SQLSentencia();
+                sentencia.Peticion= @"EXEC PA_CamillaPorSala_Insertar @iS,@iC";
 
+                SqlParameter paramiS = new SqlParameter();
+                paramiS.Value = idS;
+                paramiS.ParameterName = "@iS";
+                paramiS.SqlDbType = System.Data.SqlDbType.Int;
+               
+                SqlParameter paramiC = new SqlParameter();
+                paramiC.Value = idC;
+                paramiC.ParameterName = "@iC";
+                paramiC.SqlDbType = System.Data.SqlDbType.Int;
+
+                sentencia.lstParametros.Add(paramiS);
+                sentencia.lstParametros.Add(paramiC);
+
+                AD acceso = new AD();
+                return acceso.ejecutarSentecia(sentencia);
+
+
+
+            }
+            catch (Exception es) {
+                throw es;
+
+            }
+
+        }
+        #endregion
 
         #endregion
 
