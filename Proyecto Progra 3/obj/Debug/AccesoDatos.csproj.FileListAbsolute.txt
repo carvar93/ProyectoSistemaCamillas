@@ -307,3 +307,16 @@ C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Proyecto Progra 3\obj
 C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CopyComplete
 C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.dll
 C:\Users\cavu9\OneDrive\Escritorio\ProyectoSistemaCamillas\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.pdb
+C:\Users\Admin\Desktop\Proyecto para git\ProyectoSistemaCamillas\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll.config
+C:\Users\Admin\Desktop\Proyecto para git\ProyectoSistemaCamillas\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.dll
+C:\Users\Admin\Desktop\Proyecto para git\ProyectoSistemaCamillas\Proyecto Progra 3\bin\Debug\Proyecto Progra 3.pdb
+C:\Users\Admin\Desktop\Proyecto para git\ProyectoSistemaCamillas\Proyecto Progra 3\bin\Debug\Entidades.dll
+C:\Users\Admin\Desktop\Proyecto para git\ProyectoSistemaCamillas\Proyecto Progra 3\bin\Debug\EntityFramework.dll
+C:\Users\Admin\Desktop\Proyecto para git\ProyectoSistemaCamillas\Proyecto Progra 3\bin\Debug\Entidades.pdb
+C:\Users\Admin\Desktop\Proyecto para git\ProyectoSistemaCamillas\Proyecto Progra 3\bin\Debug\Entidades.dll.config
+C:\Users\Admin\Desktop\Proyecto para git\ProyectoSistemaCamillas\Proyecto Progra 3\bin\Debug\EntityFramework.xml
+C:\Users\Admin\Desktop\Proyecto para git\ProyectoSistemaCamillas\Proyecto Progra 3\obj\Debug\AccesoDatos.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\Proyecto para git\ProyectoSistemaCamillas\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Proyecto para git\ProyectoSistemaCamillas\Proyecto Progra 3\obj\Debug\AccesoDatos.csproj.CopyComplete
+C:\Users\Admin\Desktop\Proyecto para git\ProyectoSistemaCamillas\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.dll
+C:\Users\Admin\Desktop\Proyecto para git\ProyectoSistemaCamillas\Proyecto Progra 3\obj\Debug\Proyecto Progra 3.pdb

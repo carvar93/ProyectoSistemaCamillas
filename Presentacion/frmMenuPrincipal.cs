@@ -156,5 +156,12 @@ namespace Presentacion
             s.Show();
 
         }
+
+        private void especialidadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmEspecialidad frm = new frmEspecialidad();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }

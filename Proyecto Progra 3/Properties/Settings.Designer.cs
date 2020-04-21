@@ -26,8 +26,7 @@ namespace Proyecto_Progra_3.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-MS23KP4\\SQLEXPRESS;Initial Catalog=Hospital;User ID=sa;Passwo" +
-            "rd=base1234")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-23UO08T;Initial Catalog=Hospital;User ID=sa;Password=123456")]
         public string Conexion {
             get {
                 return ((string)(this["Conexion"]));

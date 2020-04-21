@@ -486,7 +486,132 @@ namespace AccesoDatos
         }
 
 
-         #endregion
+        #endregion
+        #region S_METODOS
+        #region Especialidad
+        /// <summary>
+        /// Metodo hace la consulta de la lista de las empecialidades 
+        /// </summary>
+        /// <param name="sentencia">SQLSentencia</param>
+        /// <returns>Lista Especilaidad</returns>
+        public List<Especialidad> consultarEspecialidades(SQLSentencia sentencia)
+        {
+            List<Especialidad> listaResultado = new List<Especialidad>();
+            DataTable dt = new DataTable();
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = objconexion;
+                cmd.CommandType = System.Data.CommandType.Text;
+                cmd.CommandText = sentencia.Peticion;
+                if (sentencia.lstParametros.Count > 0)
+                    cmd.Parameters.AddRange(sentencia.lstParametros.ToArray());
+                SqlDataAdapter objCaptura = new SqlDataAdapter(cmd);
+                objCaptura.Fill(dt);
+                if (dt.Rows.Count > 0)
+                {
+                    foreach (DataRow item in dt.Rows)
+                    {
+                        Especialidad especialidad = new Especialidad();
+                        especialidad.idEspecialidad = Convert.ToInt32(item.ItemArray[0]);
+                        especialidad.nombre = item.ItemArray[1].ToString();
+                        listaResultado.Add(especialidad);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return listaResultado;
+        }
+
+        #endregion
+        #region Trabador
+        /// <summary>
+        /// Metodo hace la consulta de la lista de las Trabajadores 
+        /// </summary>
+        /// <param name="sentencia">SQLSentencia</param>
+        /// <returns>Lista Trabajadores</returns>
+        public List<Trabajador> consultarTrabajadores(SQLSentencia sentencia)
+        {
+            List<Trabajador> listaResultado = new List<Trabajador>();
+            DataTable dt = new DataTable();
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = objconexion;
+                cmd.CommandType = System.Data.CommandType.Text;
+                cmd.CommandText = sentencia.Peticion;
+                if (sentencia.lstParametros.Count > 0)
+                    cmd.Parameters.AddRange(sentencia.lstParametros.ToArray());
+                SqlDataAdapter objCaptura = new SqlDataAdapter(cmd);
+                objCaptura.Fill(dt);
+                if (dt.Rows.Count > 0)
+                {
+                    foreach (DataRow item in dt.Rows)
+                    {
+                        Trabajador trabajador = new Trabajador();
+                        trabajador.idTrabajador = Convert.ToInt32(item.ItemArray[0]);
+                        trabajador.idEspecialidad = Convert.ToInt32(item.ItemArray[1]);
+                        trabajador.nombre = item.ItemArray[2].ToString();
+                        trabajador.nombre = item.ItemArray[3].ToString();
+                        trabajador.cantidadPacientes = Convert.ToInt32(item.ItemArray[4]);
+                        trabajador.añosExperiencia = Convert.ToInt32(item.ItemArray[5]);
+                        listaResultado.Add(trabajador);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return listaResultado;
+        }
+        #endregion
+        #region Paciente
+        /// <summary>
+        /// Metodo hace la consulta de la lista de las Trabajadores 
+        /// </summary>
+        /// <param name="sentencia">SQLSentencia</param>
+        /// <returns>Lista Trabajadores</returns>
+        public List<Paciente> consultarPacientes(SQLSentencia sentencia)
+        {
+            List<Paciente> listaResultado = new List<Paciente>();
+            DataTable dt = new DataTable();
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = objconexion;
+                cmd.CommandType = System.Data.CommandType.Text;
+                cmd.CommandText = sentencia.Peticion;
+                if (sentencia.lstParametros.Count > 0)
+                    cmd.Parameters.AddRange(sentencia.lstParametros.ToArray());
+                SqlDataAdapter objCaptura = new SqlDataAdapter(cmd);
+                objCaptura.Fill(dt);
+                if (dt.Rows.Count > 0)
+                {
+                    foreach (DataRow item in dt.Rows)
+                    {
+                        Paciente paciente = new Paciente();
+                        paciente.idPaciente = Convert.ToInt32(item.ItemArray[0]);
+                        paciente.idTrabajador = Convert.ToInt32(item.ItemArray[1]);
+                        paciente.nombre = item.ItemArray[2].ToString();
+                        paciente.padecimiente = item.ItemArray[3].ToString();
+                        paciente.motivoEmergencia = item.ItemArray[4].ToString();
+                        paciente.Estado = item.ItemArray[5].ToString();
+                        listaResultado.Add(paciente);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return listaResultado;
+        }
+        #endregion
+        #endregion
     }
     #endregion
 }

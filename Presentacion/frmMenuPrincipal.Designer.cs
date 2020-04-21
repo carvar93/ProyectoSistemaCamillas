@@ -119,6 +119,7 @@
             this.especialidadToolStripMenuItem.Name = "especialidadToolStripMenuItem";
             this.especialidadToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.especialidadToolStripMenuItem.Text = "Especialidad";
+            this.especialidadToolStripMenuItem.Click += new System.EventHandler(this.especialidadToolStripMenuItem_Click);
             // 
             // cerrarElSistemaToolStripMenuItem
             // 

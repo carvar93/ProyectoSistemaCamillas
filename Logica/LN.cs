@@ -864,6 +864,365 @@ namespace Logica
 
         #endregion
 
+        #region Especialidad
+        /// <summary>
+        /// Se crea la peticion para ser consultada, la cual trae lista de especialidades
+        /// </summary>
+        /// <param name="especialidad"> Especialidad</param>
+        /// <returns>Lista tipo Especialdad</returns>
+        public static List<Especialidad> consultaEspecialidad()
+        {
+            try
+            {
+                SQLSentencia peticion = new SQLSentencia();
+                peticion.Peticion = @"EXEC PA_S_EspecilidadCosulta";
+                AD acceso = new AD();
+                return acceso.consultarEspecialidades(peticion);
+            }
+            catch (Exception ex)
+            {
 
+                throw ex;
+            }
+        }
+        /// <summary>
+        /// Se agreagar la perticion y se parametrizan los datos para agregar datos a Especialidad
+        /// </summary>
+        /// <param name="especialidad"> Especialdiad </param>
+        public static void agregarEspecialidad(Especialidad especialidad)
+        {
+            SQLSentencia sentencia = new SQLSentencia();
+            sentencia.Peticion = @"EXEC PA_S_EspecilidadAgregar @nombre";
+            SqlParameter paramEspecialidad = new SqlParameter();
+            paramEspecialidad.Value = especialidad.nombre;
+            paramEspecialidad.ParameterName = "@nombre";
+            paramEspecialidad.SqlDbType = System.Data.SqlDbType.VarChar;
+            sentencia.lstParametros.Add(paramEspecialidad);
+            AD acceso = new AD();
+            acceso.ejecutarSentecia(sentencia);
+        }
+        /// <summary>
+        /// Parametriza los datos para modificar la especilaidad
+        /// </summary>
+        /// <param name="especialidad"></param>
+        public static void modificarEspecialidad(Especialidad especialidad)
+        {
+            SQLSentencia sentencia = new SQLSentencia();
+            sentencia.Peticion = @"EXEC PA_S_EspecilidadModificar @id, @nombre";
+            SqlParameter paramEspecialidad = new SqlParameter
+            {
+                Value = especialidad.idEspecialidad,
+                ParameterName = "@id",
+                SqlDbType = System.Data.SqlDbType.Int
+            };
+            sentencia.lstParametros.Add(paramEspecialidad);
+            SqlParameter paramNombre = new SqlParameter
+            {
+                Value = especialidad.nombre,
+                ParameterName = "@nombre",
+                SqlDbType = System.Data.SqlDbType.VarChar
+            };
+            sentencia.lstParametros.Add(paramNombre);
+            AD acceso = new AD();
+            acceso.ejecutarSentecia(sentencia);
+        }
+        /// <summary>
+        ///  Parametriza los datos para Eliminar la especilaidad
+        /// </summary>
+        /// <param name="especialidad"><Especialidad>
+        public static void eliminarEspecialidad(Especialidad especialidad)
+        {
+            SQLSentencia sentencia = new SQLSentencia();
+            sentencia.Peticion = @"PA_S_EspecilidadEliminar @id";
+            SqlParameter paramEspecialidad = new SqlParameter();
+            paramEspecialidad.Value = especialidad.idEspecialidad;
+            paramEspecialidad.ParameterName = "@id";
+            paramEspecialidad.SqlDbType = System.Data.SqlDbType.Int;
+            sentencia.lstParametros.Add(paramEspecialidad);
+            AD acceso = new AD();
+            acceso.ejecutarSentecia(sentencia);
+
+        }
+        #endregion
+        #region  Trabajador
+        /// <summary>
+        /// Se crea la peticion para ser consultada, la cual trae lista de Trabajadores
+        /// </summary>
+        /// <param name="trabajador"> Trabajador</param>
+        /// <returns>Lista tipo Trabajador</returns>
+        public static List<Trabajador> consultaTrabajador()
+        {
+            try
+            {
+                SQLSentencia peticion = new SQLSentencia();
+                peticion.Peticion = @"EXEC PA_S_TrabajadorConsulta";
+                AD acceso = new AD();
+                return acceso.consultarTrabajadores(peticion);
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+        /// <summary>
+        /// Parametriza los datos para agreagar un trabajador
+        /// </summary>
+        /// <param name="trabajador"></Trabajador>
+        public static void agregarTrabajador(Trabajador trabajador)
+        {
+            SQLSentencia sentencia = new SQLSentencia();
+            sentencia.Peticion = @"PA_S_TrabajadorAgregar @especialidad, @nombre, @puesto, @cantidadP, @añosE";
+            SqlParameter paramEspecialidad = new SqlParameter
+            {
+                Value = trabajador.idEspecialidad,
+                ParameterName = "@especialidad",
+                SqlDbType = System.Data.SqlDbType.Int
+            };
+            sentencia.lstParametros.Add(paramEspecialidad);
+            SqlParameter paramNombre = new SqlParameter
+            {
+                Value = trabajador.nombre,
+                ParameterName = "@nombre",
+                SqlDbType = System.Data.SqlDbType.VarChar
+            };
+            sentencia.lstParametros.Add(paramNombre);
+            SqlParameter paramPuesto = new SqlParameter
+            {
+                Value = trabajador.puesto,
+                ParameterName = "@puesto",
+                SqlDbType = System.Data.SqlDbType.VarChar
+            };
+            SqlParameter paramCantidadP = new SqlParameter
+            {
+                Value = trabajador.cantidadPacientes,
+                ParameterName = "@cantidadP",
+                SqlDbType = System.Data.SqlDbType.Int
+            };
+            sentencia.lstParametros.Add(paramCantidadP);
+            SqlParameter paramAñosE = new SqlParameter
+            {
+                Value = trabajador.añosExperiencia,
+                ParameterName = "@añosE",
+                SqlDbType = System.Data.SqlDbType.Int
+            };
+            sentencia.lstParametros.Add(paramAñosE);
+
+            AD acceso = new AD();
+            acceso.ejecutarSentecia(sentencia);
+        }
+        /// <summary>
+        /// Parametriza los datos para Modificar un trabajador
+        /// </summary>
+        /// <param name="trabajador"></Trabajador>
+        public static void ModificarTrabajador(Trabajador trabajador)
+        {
+            SQLSentencia sentencia = new SQLSentencia();
+            sentencia.Peticion = @"PA_S_TrabajadorAgregar @idTrabajador,@especialidad, @nombre, @puesto, @cantidadP, @añosE";
+            SqlParameter paramTrabajador = new SqlParameter
+            {
+                Value = trabajador.idTrabajador,
+                ParameterName = "@idTrabajador",
+                SqlDbType = System.Data.SqlDbType.Int
+            };
+            sentencia.lstParametros.Add(paramTrabajador);
+            SqlParameter paramEspecialidad = new SqlParameter
+            {
+                Value = trabajador.idEspecialidad,
+                ParameterName = "@especialidad",
+                SqlDbType = System.Data.SqlDbType.Int
+            };
+            sentencia.lstParametros.Add(paramEspecialidad);
+            SqlParameter paramNombre = new SqlParameter
+            {
+                Value = trabajador.nombre,
+                ParameterName = "@nombre",
+                SqlDbType = System.Data.SqlDbType.VarChar
+            };
+            sentencia.lstParametros.Add(paramNombre);
+            SqlParameter paramPuesto = new SqlParameter
+            {
+                Value = trabajador.puesto,
+                ParameterName = "@puesto",
+                SqlDbType = System.Data.SqlDbType.VarChar
+            };
+            sentencia.lstParametros.Add(paramPuesto);
+            SqlParameter paramCantidadP = new SqlParameter
+            {
+                Value = trabajador.cantidadPacientes,
+                ParameterName = "@cantidadP",
+                SqlDbType = System.Data.SqlDbType.Int
+            };
+            sentencia.lstParametros.Add(paramCantidadP);
+            SqlParameter paramAñosE = new SqlParameter
+            {
+                Value = trabajador.añosExperiencia,
+                ParameterName = "@añosE",
+                SqlDbType = System.Data.SqlDbType.Int
+            };
+            sentencia.lstParametros.Add(paramAñosE);
+
+            AD acceso = new AD();
+            acceso.ejecutarSentecia(sentencia);
+        }
+        /// <summary>
+        /// Parametriza los datos para Eliminar un trabajador
+        /// </summary>
+        /// <param name="trabajador"></Trabajador>
+        public static void eliminarTrabajador(Trabajador trabajador)
+        {
+            SQLSentencia sentencia = new SQLSentencia();
+            sentencia.Peticion = @"PA_S_TrabajadorEliminar @idTrabajador";
+            SqlParameter paramTrabajador = new SqlParameter();
+            paramTrabajador.Value = trabajador.idTrabajador;
+            paramTrabajador.ParameterName = "@idTrabajador";
+            paramTrabajador.SqlDbType = System.Data.SqlDbType.Int;
+            sentencia.lstParametros.Add(paramTrabajador);
+            AD acceso = new AD();
+            acceso.ejecutarSentecia(sentencia);
+        }
+        #endregion
+        #region Paciente
+        /// <summary>
+        /// Se crea la peticion para ser consultada, la cual trae lista de Pacientes
+        /// </summary>
+        /// <param name="especialidad"> Paciente</param>
+        /// <returns>Lista tipo Paciente</returns>
+        public static List<Paciente> consultaPaciente()
+        {
+            try
+            {
+                SQLSentencia peticion = new SQLSentencia();
+                peticion.Peticion = @"EXEC PA_S_PacienteConsutar";
+                AD acceso = new AD();
+                return acceso.consultarPacientes(peticion);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        /// <summary>
+        /// Parametrisa los datos  para agreagar en paciente
+        /// </summary>
+        /// <param name="paciente"> Paciente</param>
+        public static void agregarPaciente(Paciente paciente)
+        {
+            SQLSentencia sentencia = new SQLSentencia();
+            sentencia.Peticion = @"PA_S_PacienteaAgregar @idTrabajador, @nombre, @padecimiente, @motivoEmergencia, @Estado";
+            SqlParameter paramTrabajador = new SqlParameter
+            {
+                Value = paciente.idTrabajador,
+                ParameterName = "@idTrabajador",
+                SqlDbType = System.Data.SqlDbType.Int
+            };
+            sentencia.lstParametros.Add(paramTrabajador);
+            SqlParameter paramNombre = new SqlParameter
+            {
+                Value = paciente.nombre,
+                ParameterName = "@nombre",
+                SqlDbType = System.Data.SqlDbType.VarChar
+            };
+            sentencia.lstParametros.Add(paramNombre);
+            SqlParameter paramPadecimiente = new SqlParameter
+            {
+                Value = paciente.padecimiente,
+                ParameterName = "@padecimiente",
+                SqlDbType = System.Data.SqlDbType.VarChar
+            };
+            sentencia.lstParametros.Add(paramPadecimiente);
+            SqlParameter paramMotivoEmergencia = new SqlParameter
+            {
+                Value = paciente.motivoEmergencia,
+                ParameterName = "@motivoEmergencia",
+                SqlDbType = System.Data.SqlDbType.VarChar
+            };
+            sentencia.lstParametros.Add(paramMotivoEmergencia);
+            SqlParameter paramEstado = new SqlParameter
+            {
+                Value = paciente.Estado,
+                ParameterName = "@Estado",
+                SqlDbType = System.Data.SqlDbType.VarChar
+            };
+            sentencia.lstParametros.Add(paramEstado);
+
+            AD acceso = new AD();
+            acceso.ejecutarSentecia(sentencia);
+        }
+        /// <summary>
+        /// Parametrisa los datos  para Modificar en paciente
+        /// </summary>
+        /// <param name="paciente"> Paciente</param>
+        public static void ModificarPaciente(Paciente paciente)
+        {
+            SQLSentencia sentencia = new SQLSentencia();
+            sentencia.Peticion = @"PA_S_PacienteaModificar @idPaciente, @idTrabajador, @nombre, @padecimiente, @motivoEmergencia, @Estado";
+            SqlParameter paramPaciente = new SqlParameter
+            {
+                Value = paciente.idPaciente,
+                ParameterName = "@idPaciente",
+                SqlDbType = System.Data.SqlDbType.Int
+            };
+            sentencia.lstParametros.Add(paramPaciente);
+            SqlParameter paramTrabajador = new SqlParameter
+            {
+                Value = paciente.idTrabajador,
+                ParameterName = "@idTrabajador",
+                SqlDbType = System.Data.SqlDbType.Int
+            };
+            sentencia.lstParametros.Add(paramTrabajador);
+            SqlParameter paramNombre = new SqlParameter
+            {
+                Value = paciente.nombre,
+                ParameterName = "@nombre",
+                SqlDbType = System.Data.SqlDbType.VarChar
+            };
+            sentencia.lstParametros.Add(paramNombre);
+            SqlParameter paramPadecimiente = new SqlParameter
+            {
+                Value = paciente.padecimiente,
+                ParameterName = "@padecimiente",
+                SqlDbType = System.Data.SqlDbType.VarChar
+            };
+            sentencia.lstParametros.Add(paramPadecimiente);
+            SqlParameter paramMotivoEmergencia = new SqlParameter
+            {
+                Value = paciente.motivoEmergencia,
+                ParameterName = "@motivoEmergencia",
+                SqlDbType = System.Data.SqlDbType.VarChar
+            };
+            sentencia.lstParametros.Add(paramMotivoEmergencia);
+            SqlParameter paramEstado = new SqlParameter
+            {
+                Value = paciente.Estado,
+                ParameterName = "@Estado",
+                SqlDbType = System.Data.SqlDbType.VarChar
+            };
+            sentencia.lstParametros.Add(paramEstado);
+
+            AD acceso = new AD();
+            acceso.ejecutarSentecia(sentencia);
+        }
+        /// <summary>
+        /// Parametrisa los datos  para eliminar en paciente
+        /// </summary>
+        /// <param name="paciente"> Paciente</param>
+        public static void eliminarTrabajador(Paciente paciente)
+        {
+            SQLSentencia sentencia = new SQLSentencia
+            {
+                Peticion = @"PA_S_PacienteaEliminar @idPaciente"
+            };
+            SqlParameter paramPaciente = new SqlParameter
+            {
+                Value = paciente.idPaciente,
+                ParameterName = "@idPaciente",
+                SqlDbType = System.Data.SqlDbType.Int
+            };
+            sentencia.lstParametros.Add(paramPaciente);
+            AD acceso = new AD();
+            acceso.ejecutarSentecia(sentencia);
+        }
+        #endregion
     }
 }
