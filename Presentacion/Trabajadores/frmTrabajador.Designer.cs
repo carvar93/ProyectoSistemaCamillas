@@ -89,7 +89,7 @@
             this.btLimpiar.Location = new System.Drawing.Point(6, 278);
             this.btLimpiar.Name = "btLimpiar";
             this.btLimpiar.Size = new System.Drawing.Size(75, 32);
-            this.btLimpiar.TabIndex = 17;
+            this.btLimpiar.TabIndex = 7;
             this.btLimpiar.Text = "Limpiar";
             this.btLimpiar.UseVisualStyleBackColor = true;
             this.btLimpiar.Click += new System.EventHandler(this.btLimpiar_Click);
@@ -99,7 +99,7 @@
             this.btAgregar.Location = new System.Drawing.Point(252, 278);
             this.btAgregar.Name = "btAgregar";
             this.btAgregar.Size = new System.Drawing.Size(75, 32);
-            this.btAgregar.TabIndex = 16;
+            this.btAgregar.TabIndex = 10;
             this.btAgregar.Text = "Agregar";
             this.btAgregar.UseVisualStyleBackColor = true;
             this.btAgregar.Click += new System.EventHandler(this.btAgregar_Click);
@@ -109,7 +109,7 @@
             this.btModificar.Location = new System.Drawing.Point(171, 278);
             this.btModificar.Name = "btModificar";
             this.btModificar.Size = new System.Drawing.Size(75, 32);
-            this.btModificar.TabIndex = 15;
+            this.btModificar.TabIndex = 9;
             this.btModificar.Text = "Modificar";
             this.btModificar.UseVisualStyleBackColor = true;
             this.btModificar.Click += new System.EventHandler(this.btModificar_Click);
@@ -119,7 +119,7 @@
             this.btEliminar.Location = new System.Drawing.Point(90, 278);
             this.btEliminar.Name = "btEliminar";
             this.btEliminar.Size = new System.Drawing.Size(75, 32);
-            this.btEliminar.TabIndex = 14;
+            this.btEliminar.TabIndex = 8;
             this.btEliminar.Text = "Eliminar";
             this.btEliminar.UseVisualStyleBackColor = true;
             this.btEliminar.Click += new System.EventHandler(this.btEliminar_Click);
@@ -129,7 +129,7 @@
             this.tbPuesto.Location = new System.Drawing.Point(135, 136);
             this.tbPuesto.Name = "tbPuesto";
             this.tbPuesto.Size = new System.Drawing.Size(103, 20);
-            this.tbPuesto.TabIndex = 13;
+            this.tbPuesto.TabIndex = 4;
             // 
             // cbEspecialidad
             // 
@@ -138,14 +138,14 @@
             this.cbEspecialidad.Location = new System.Drawing.Point(135, 66);
             this.cbEspecialidad.Name = "cbEspecialidad";
             this.cbEspecialidad.Size = new System.Drawing.Size(103, 21);
-            this.cbEspecialidad.TabIndex = 12;
+            this.cbEspecialidad.TabIndex = 2;
             // 
             // numAños
             // 
             this.numAños.Location = new System.Drawing.Point(135, 210);
             this.numAños.Name = "numAños";
             this.numAños.Size = new System.Drawing.Size(103, 20);
-            this.numAños.TabIndex = 11;
+            this.numAños.TabIndex = 6;
             this.numAños.ValueChanged += new System.EventHandler(this.numericUpDown2_ValueChanged);
             // 
             // numCantPacientes
@@ -153,14 +153,14 @@
             this.numCantPacientes.Location = new System.Drawing.Point(135, 171);
             this.numCantPacientes.Name = "numCantPacientes";
             this.numCantPacientes.Size = new System.Drawing.Size(103, 20);
-            this.numCantPacientes.TabIndex = 10;
+            this.numCantPacientes.TabIndex = 5;
             // 
             // tbNombre
             // 
             this.tbNombre.Location = new System.Drawing.Point(135, 97);
             this.tbNombre.Name = "tbNombre";
             this.tbNombre.Size = new System.Drawing.Size(103, 20);
-            this.tbNombre.TabIndex = 7;
+            this.tbNombre.TabIndex = 3;
             // 
             // tbIdTrabajador
             // 
@@ -168,7 +168,7 @@
             this.tbIdTrabajador.Location = new System.Drawing.Point(135, 31);
             this.tbIdTrabajador.Name = "tbIdTrabajador";
             this.tbIdTrabajador.Size = new System.Drawing.Size(103, 20);
-            this.tbIdTrabajador.TabIndex = 6;
+            this.tbIdTrabajador.TabIndex = 1;
             // 
             // label6
             // 
@@ -239,7 +239,7 @@
             this.dg.Location = new System.Drawing.Point(383, 77);
             this.dg.Name = "dg";
             this.dg.Size = new System.Drawing.Size(612, 352);
-            this.dg.TabIndex = 8;
+            this.dg.TabIndex = 14;
             this.dg.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dg_CellClick);
             // 
             // tbBuscar
@@ -247,7 +247,7 @@
             this.tbBuscar.Location = new System.Drawing.Point(496, 38);
             this.tbBuscar.Name = "tbBuscar";
             this.tbBuscar.Size = new System.Drawing.Size(103, 20);
-            this.tbBuscar.TabIndex = 9;
+            this.tbBuscar.TabIndex = 11;
             this.tbBuscar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbBuscar_KeyPress);
             // 
             // button1
@@ -255,7 +255,7 @@
             this.button1.Location = new System.Drawing.Point(878, 36);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(117, 23);
-            this.button1.TabIndex = 18;
+            this.button1.TabIndex = 13;
             this.button1.Text = "Cargar Datos";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -265,7 +265,7 @@
             this.btBuscar.Location = new System.Drawing.Point(624, 36);
             this.btBuscar.Name = "btBuscar";
             this.btBuscar.Size = new System.Drawing.Size(75, 23);
-            this.btBuscar.TabIndex = 19;
+            this.btBuscar.TabIndex = 12;
             this.btBuscar.Text = "Buscar";
             this.btBuscar.UseVisualStyleBackColor = true;
             this.btBuscar.Click += new System.EventHandler(this.btBuscar_Click);

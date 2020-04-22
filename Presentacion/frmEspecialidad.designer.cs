@@ -73,14 +73,14 @@
             this.tbIdEspecialidad.Location = new System.Drawing.Point(161, 52);
             this.tbIdEspecialidad.Name = "tbIdEspecialidad";
             this.tbIdEspecialidad.Size = new System.Drawing.Size(100, 20);
-            this.tbIdEspecialidad.TabIndex = 2;
+            this.tbIdEspecialidad.TabIndex = 1;
             // 
             // tbNombre
             // 
             this.tbNombre.Location = new System.Drawing.Point(161, 115);
             this.tbNombre.Name = "tbNombre";
             this.tbNombre.Size = new System.Drawing.Size(100, 20);
-            this.tbNombre.TabIndex = 3;
+            this.tbNombre.TabIndex = 2;
             // 
             // button1
             // 
@@ -142,7 +142,7 @@
             this.dgridEspecialidad.Location = new System.Drawing.Point(396, 86);
             this.dgridEspecialidad.Name = "dgridEspecialidad";
             this.dgridEspecialidad.Size = new System.Drawing.Size(399, 199);
-            this.dgridEspecialidad.TabIndex = 9;
+            this.dgridEspecialidad.TabIndex = 10;
             this.dgridEspecialidad.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgridEspecialidad_CellClick);
             // 
             // tbBuscar
@@ -150,7 +150,7 @@
             this.tbBuscar.Location = new System.Drawing.Point(529, 48);
             this.tbBuscar.Name = "tbBuscar";
             this.tbBuscar.Size = new System.Drawing.Size(100, 20);
-            this.tbBuscar.TabIndex = 10;
+            this.tbBuscar.TabIndex = 8;
             this.tbBuscar.TextChanged += new System.EventHandler(this.tbBuscar_TextChanged);
             // 
             // button5
@@ -158,7 +158,7 @@
             this.button5.Location = new System.Drawing.Point(670, 46);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(93, 23);
-            this.button5.TabIndex = 11;
+            this.button5.TabIndex = 9;
             this.button5.Text = "Cargar Datos";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
@@ -168,7 +168,7 @@
             this.btLimpiar.Location = new System.Drawing.Point(27, 262);
             this.btLimpiar.Name = "btLimpiar";
             this.btLimpiar.Size = new System.Drawing.Size(75, 23);
-            this.btLimpiar.TabIndex = 12;
+            this.btLimpiar.TabIndex = 3;
             this.btLimpiar.Text = "Limpiar";
             this.btLimpiar.UseVisualStyleBackColor = true;
             this.btLimpiar.Click += new System.EventHandler(this.btLimpiar_Click);
