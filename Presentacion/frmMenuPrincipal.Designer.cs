@@ -87,6 +87,7 @@
             this.trabajadorToolStripMenuItem.Name = "trabajadorToolStripMenuItem";
             this.trabajadorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.trabajadorToolStripMenuItem.Text = "Trabajador";
+            this.trabajadorToolStripMenuItem.Click += new System.EventHandler(this.trabajadorToolStripMenuItem_Click);
             // 
             // camillaToolStripMenuItem
             // 

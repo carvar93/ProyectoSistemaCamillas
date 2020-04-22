@@ -163,5 +163,12 @@ namespace Presentacion
             frm.MdiParent = this;
             frm.Show();
         }
+
+        private void trabajadorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Trabajadores.frmTrabajador frm = new Trabajadores.frmTrabajador();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }

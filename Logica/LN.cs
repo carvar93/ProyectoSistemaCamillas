@@ -886,6 +886,33 @@ namespace Logica
             }
         }
         /// <summary>
+        /// Se crea la peticion para ser consultada, la cual trae lista de especialidades
+        /// </summary>
+        /// <param name="especialidad"> Especialidad</param>
+        /// <returns>Lista tipo Especialdad</returns>
+        public static string consultaEspecialidad2(string t)
+        {
+            try
+            {
+                SQLSentencia peticion = new SQLSentencia();
+                peticion.Peticion = @"EXEC PA_S_EspecialidadConuslta2 @id";
+                SqlParameter paramEspecialidad = new SqlParameter
+                {
+                    Value = Convert.ToInt32(t),
+                    ParameterName = "@id",
+                    SqlDbType = System.Data.SqlDbType.Int
+                };
+                peticion.lstParametros.Add(paramEspecialidad);
+                AD acceso = new AD();
+                return acceso.consultarEspecialidades2(peticion);
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+        /// <summary>
         /// Se agreagar la perticion y se parametrizan los datos para agregar datos a Especialidad
         /// </summary>
         /// <param name="especialidad"> Especialdiad </param>
@@ -971,8 +998,10 @@ namespace Logica
         /// <param name="trabajador"></Trabajador>
         public static void agregarTrabajador(Trabajador trabajador)
         {
+            try
+            {
             SQLSentencia sentencia = new SQLSentencia();
-            sentencia.Peticion = @"PA_S_TrabajadorAgregar @especialidad, @nombre, @puesto, @cantidadP, @añosE";
+            sentencia.Peticion = @"EXEC PA_S_TrabajadorAgregar @especialidad, @nombre, @puesto, @cantidadP, @añosE";
             SqlParameter paramEspecialidad = new SqlParameter
             {
                 Value = trabajador.idEspecialidad,
@@ -993,7 +1022,8 @@ namespace Logica
                 ParameterName = "@puesto",
                 SqlDbType = System.Data.SqlDbType.VarChar
             };
-            SqlParameter paramCantidadP = new SqlParameter
+                sentencia.lstParametros.Add(paramPuesto);
+                SqlParameter paramCantidadP = new SqlParameter
             {
                 Value = trabajador.cantidadPacientes,
                 ParameterName = "@cantidadP",
@@ -1010,6 +1040,12 @@ namespace Logica
 
             AD acceso = new AD();
             acceso.ejecutarSentecia(sentencia);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
         /// <summary>
         /// Parametriza los datos para Modificar un trabajador
@@ -1017,8 +1053,10 @@ namespace Logica
         /// <param name="trabajador"></Trabajador>
         public static void ModificarTrabajador(Trabajador trabajador)
         {
-            SQLSentencia sentencia = new SQLSentencia();
-            sentencia.Peticion = @"PA_S_TrabajadorAgregar @idTrabajador,@especialidad, @nombre, @puesto, @cantidadP, @añosE";
+            try
+            {
+              SQLSentencia sentencia = new SQLSentencia(); 
+            sentencia.Peticion = @"EXEC PA_S_TrabajadorModificar @idTrabajador, @idEspecialidad, @nombre, @puesto, @cantidadPacientes, @añosExperiencia";
             SqlParameter paramTrabajador = new SqlParameter
             {
                 Value = trabajador.idTrabajador,
@@ -1029,7 +1067,7 @@ namespace Logica
             SqlParameter paramEspecialidad = new SqlParameter
             {
                 Value = trabajador.idEspecialidad,
-                ParameterName = "@especialidad",
+                ParameterName = "@idEspecialidad",
                 SqlDbType = System.Data.SqlDbType.Int
             };
             sentencia.lstParametros.Add(paramEspecialidad);
@@ -1050,20 +1088,26 @@ namespace Logica
             SqlParameter paramCantidadP = new SqlParameter
             {
                 Value = trabajador.cantidadPacientes,
-                ParameterName = "@cantidadP",
+                ParameterName = "@cantidadPacientes",
                 SqlDbType = System.Data.SqlDbType.Int
             };
             sentencia.lstParametros.Add(paramCantidadP);
             SqlParameter paramAñosE = new SqlParameter
             {
                 Value = trabajador.añosExperiencia,
-                ParameterName = "@añosE",
+                ParameterName = "@añosExperiencia",
                 SqlDbType = System.Data.SqlDbType.Int
             };
             sentencia.lstParametros.Add(paramAñosE);
 
             AD acceso = new AD();
             acceso.ejecutarSentecia(sentencia);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
         /// <summary>
         /// Parametriza los datos para Eliminar un trabajador
@@ -1072,7 +1116,7 @@ namespace Logica
         public static void eliminarTrabajador(Trabajador trabajador)
         {
             SQLSentencia sentencia = new SQLSentencia();
-            sentencia.Peticion = @"PA_S_TrabajadorEliminar @idTrabajador";
+            sentencia.Peticion = @"EXEC PA_S_TrabajadorEliminar @idTrabajador";
             SqlParameter paramTrabajador = new SqlParameter();
             paramTrabajador.Value = trabajador.idTrabajador;
             paramTrabajador.ParameterName = "@idTrabajador";

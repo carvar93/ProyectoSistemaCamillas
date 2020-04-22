@@ -526,6 +526,34 @@ namespace AccesoDatos
             return listaResultado;
         }
 
+        public string consultarEspecialidades2(SQLSentencia sentencia)
+        {
+            string nombre = "";
+            DataTable dt = new DataTable();
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = objconexion;
+                cmd.CommandType = System.Data.CommandType.Text;
+                cmd.CommandText = sentencia.Peticion;
+                if (sentencia.lstParametros.Count > 0)
+                    cmd.Parameters.AddRange(sentencia.lstParametros.ToArray());
+                SqlDataAdapter objCaptura = new SqlDataAdapter(cmd);
+                objCaptura.Fill(dt);
+                if (dt.Rows.Count > 0)
+                {
+                    foreach (DataRow item in dt.Rows)
+                    {
+                      nombre = item.ItemArray[0].ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return nombre;
+        }
         #endregion
         #region Trabador
         /// <summary>
@@ -555,7 +583,7 @@ namespace AccesoDatos
                         trabajador.idTrabajador = Convert.ToInt32(item.ItemArray[0]);
                         trabajador.idEspecialidad = Convert.ToInt32(item.ItemArray[1]);
                         trabajador.nombre = item.ItemArray[2].ToString();
-                        trabajador.nombre = item.ItemArray[3].ToString();
+                        trabajador.puesto= item.ItemArray[3].ToString();
                         trabajador.cantidadPacientes = Convert.ToInt32(item.ItemArray[4]);
                         trabajador.añosExperiencia = Convert.ToInt32(item.ItemArray[5]);
                         listaResultado.Add(trabajador);
