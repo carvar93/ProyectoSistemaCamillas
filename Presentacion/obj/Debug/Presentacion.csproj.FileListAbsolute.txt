@@ -93,3 +93,4 @@ C:\Users\Admin\Desktop\Proyecto para git\ProyectoSistemaCamillas\Presentacion\ob
 C:\Users\Admin\Desktop\Proyecto para git\ProyectoSistemaCamillas\Presentacion\obj\Debug\Presentacion.pdb
 C:\Users\Admin\Desktop\Proyecto para git\ProyectoSistemaCamillas\Presentacion\obj\Debug\Presentacion.frmEspecialidad.resources
 C:\Users\Admin\Desktop\Proyecto para git\ProyectoSistemaCamillas\Presentacion\obj\Debug\Presentacion.Trabajadores.frmTrabajador.resources
+C:\Users\Admin\Desktop\Proyecto para git\ProyectoSistemaCamillas\Presentacion\obj\Debug\Presentacion.Pacientes1.frmPaciente.resources

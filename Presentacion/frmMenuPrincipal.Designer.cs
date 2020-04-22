@@ -81,6 +81,7 @@
             this.pacienteToolStripMenuItem.Name = "pacienteToolStripMenuItem";
             this.pacienteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.pacienteToolStripMenuItem.Text = "Paciente";
+            this.pacienteToolStripMenuItem.Click += new System.EventHandler(this.pacienteToolStripMenuItem_Click);
             // 
             // trabajadorToolStripMenuItem
             // 
