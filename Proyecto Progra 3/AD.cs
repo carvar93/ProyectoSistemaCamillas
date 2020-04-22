@@ -158,6 +158,51 @@ namespace AccesoDatos
         #endregion
 
 
+        #region AsignacionCamillas
+
+        public List<Paciente> consultarPacientes(SQLSentencia peticion)
+        {
+            List<Paciente> listaResultado = new List<Paciente>();
+            DataTable dt = new DataTable();
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = objconexion;
+                cmd.CommandType = System.Data.CommandType.Text;
+                cmd.CommandText = peticion.Peticion;
+                if (peticion.lstParametros.Count > 0)
+                    cmd.Parameters.AddRange(peticion.lstParametros.ToArray());
+                SqlDataAdapter objCaptura = new SqlDataAdapter(cmd);
+                objCaptura.Fill(dt);
+                if (dt.Rows.Count > 0)
+                    foreach (DataRow item in dt.Rows)
+                    {
+                        Paciente p= new Paciente();
+                        p.idPaciente = (int)item.ItemArray[0];
+                        p.idTrabajador = (int)item.ItemArray[1];
+                        p.nombre = item.ItemArray[2].ToString();
+                        p.padecimiente = item.ItemArray[4].ToString();
+                        p.motivoEmergencia= item.ItemArray[5].ToString();
+                        p.Estado= item.ItemArray[6].ToString();
+                        listaResultado.Add(p);
+
+                    }
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                this.CERRAR();
+            }
+            return listaResultado;
+        }
+
+
+
+        #endregion
 
 
         #region Camilla

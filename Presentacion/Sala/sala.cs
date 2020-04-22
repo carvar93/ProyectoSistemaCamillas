@@ -136,7 +136,6 @@ namespace Presentacion.Sala
                 this.SaladataGridView.Refresh();
                 nombreSalatxt.Text = string.Empty;
               
-
             }
             catch (Exception es) {
                 throw es;
@@ -150,6 +149,7 @@ namespace Presentacion.Sala
                 LN.modificarCamillas(idC, "Ocupado");
                 MessageBox.Show("Camilla asignada", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.cargarDatagridCamillas();
+                this.cargarDatagrid();
                 idS = 0;
                 idC = 0;
             }
@@ -161,6 +161,13 @@ namespace Presentacion.Sala
         private void camillasParaAsigdataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             this.idC = Int32.Parse(camillasParaAsigdataGridView.Rows[e.RowIndex].Cells[0].Value.ToString());
+        }
+
+        private void SaladataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            this.idS = Int32.Parse(SaladataGridView.Rows[e.RowIndex].Cells[0].Value.ToString());
+            salagroupBox.Visible = true;
+            salagroupBox.Enabled = true;
         }
     }
 }

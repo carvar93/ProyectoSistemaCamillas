@@ -138,6 +138,7 @@
             this.procesosToolStripMenuItem.Name = "procesosToolStripMenuItem";
             this.procesosToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.procesosToolStripMenuItem.Text = "Procesos";
+            this.procesosToolStripMenuItem.Click += new System.EventHandler(this.procesosToolStripMenuItem_Click);
             // 
             // statusStrip1
             // 

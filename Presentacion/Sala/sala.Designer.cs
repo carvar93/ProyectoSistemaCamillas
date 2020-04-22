@@ -99,18 +99,21 @@
             this.SaladataGridView.Size = new System.Drawing.Size(287, 154);
             this.SaladataGridView.TabIndex = 7;
             this.SaladataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.SaladataGridView_CellClick);
+            this.SaladataGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.SaladataGridView_CellDoubleClick);
             // 
             // salagroupBox
             // 
             this.salagroupBox.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.salagroupBox.Controls.Add(this.agregarCamillasbutton);
             this.salagroupBox.Controls.Add(this.camillasParaAsigdataGridView);
+            this.salagroupBox.Enabled = false;
             this.salagroupBox.Location = new System.Drawing.Point(12, 86);
             this.salagroupBox.Name = "salagroupBox";
             this.salagroupBox.Size = new System.Drawing.Size(258, 215);
             this.salagroupBox.TabIndex = 8;
             this.salagroupBox.TabStop = false;
             this.salagroupBox.Text = "Agregar Camillas";
+            this.salagroupBox.Visible = false;
             // 
             // agregarCamillasbutton
             // 

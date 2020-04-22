@@ -682,6 +682,10 @@ namespace Logica
                 throw;
             }
         }
+
+
+
+
         #endregion
 
         #region Sala
@@ -864,6 +868,135 @@ namespace Logica
 
         #endregion
 
+        #region Asignacion de Camillas
+
+        #region agregarPacienteACamilla
+
+        public static bool agregarPacienteACamilla(Camilla c)
+        {
+
+            try
+            {
+                SQLSentencia sentencia = new SQLSentencia();
+                sentencia.Peticion = @"EXEC PA_AgregarCamilla @est";
+                SqlParameter paramCamilla = new SqlParameter();
+                paramCamilla.Value = c.estadoCamilla;
+                paramCamilla.ParameterName = "@est";
+                paramCamilla.SqlDbType = System.Data.SqlDbType.VarChar;
+                sentencia.lstParametros.Add(paramCamilla);
+                AD acceso = new AD();
+                return acceso.ejecutarSentecia(sentencia);
+
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        #endregion
+
+
+
+        #region modificarAsignacionCamillas
+        /// <summary>
+        /// Metodo para modificar las camillas
+        /// </summary>
+        /// <param name="c"></param>
+        /// <returns></returns>
+        public static bool modificarAsignacionCamillas(int id, string ne)
+        {
+            try
+            {
+                SQLSentencia sentencia = new SQLSentencia();
+                sentencia.Peticion = @"EXEC PA_ModificarCamilla @Nc, @ne";
+
+                SqlParameter paramNumCamilla = new SqlParameter();
+                paramNumCamilla.Value = id;
+                paramNumCamilla.ParameterName = "@Nc";
+                paramNumCamilla.SqlDbType = System.Data.SqlDbType.Int;
+
+                SqlParameter paramEstCamilla = new SqlParameter();
+                paramEstCamilla.Value = ne;
+                paramEstCamilla.ParameterName = "@ne";
+                paramEstCamilla.SqlDbType = System.Data.SqlDbType.VarChar;
+
+                sentencia.lstParametros.Add(paramNumCamilla);
+                sentencia.lstParametros.Add(paramEstCamilla);
+                AD acceso = new AD();
+                return acceso.ejecutarSentecia(sentencia);
+
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+        #endregion
+
+
+
+        #region eliminarAsignacion
+        /// <summary>
+        /// Metodo para eliminar asignacion por id
+        /// </summary>
+        /// <param name="c"></param>
+        /// <returns>true si se logra la eliminacion </returns>
+        public static bool eliminarAsignacion(Camilla c)
+        {
+
+            try
+            {
+                SQLSentencia sentencia = new SQLSentencia();
+                sentencia.Peticion = @"EXEC PA_EliminarCamilla @i";
+                SqlParameter paramCamilla = new SqlParameter();
+                paramCamilla.Value = c.NumeroCamilla;
+                paramCamilla.ParameterName = "@i";
+                paramCamilla.SqlDbType = System.Data.SqlDbType.Int;
+                sentencia.lstParametros.Add(paramCamilla);
+                AD acceso = new AD();
+                return acceso.ejecutarSentecia(sentencia);
+
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
+        #endregion
+
+
+        #region ConsultarPacientes
+        /// <summary>
+        /// Metodo para consultar Los pacientes por asignar camilla
+        /// </summary>
+        /// <param name="paciente"></param>
+        /// <returns>Lista de tipo paciente</returns>
+        public static List<Camilla> ConsultarPacientes(Paciente paciente)
+        {
+            try
+            {
+                SQLSentencia sentencia = new SQLSentencia();
+                sentencia.Peticion = @"EXEC PA_ConsultarCamilla @est";
+                SqlParameter paramC = new SqlParameter();
+                paramC.Value = paciente.idPaciente;
+                paramC.ParameterName = "@est";
+                paramC.SqlDbType = System.Data.SqlDbType.VarChar;
+                sentencia.lstParametros.Add(paramC);
+                AD acceso = new AD();
+                return acceso.consultarCamillas(sentencia);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+        #endregion
+
+
+        #endregion
 
     }
 }

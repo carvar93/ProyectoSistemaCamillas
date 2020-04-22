@@ -11,6 +11,7 @@ using Entidades;
 using Logica;
 using Presentacion.Camilla;
 using Presentacion.Sala;
+using Presentacion.Procesos;
 
 
 namespace Presentacion
@@ -155,6 +156,13 @@ namespace Presentacion
             s.MdiParent = this.MdiParent;
             s.Show();
 
+        }
+
+        private void procesosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AsignacionDeCamillas adc = new AsignacionDeCamillas();
+            adc.MdiParent=this.MdiParent;
+            adc.Show();
         }
     }
 }
