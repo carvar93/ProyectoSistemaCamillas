@@ -116,7 +116,7 @@ namespace Presentacion.Trabajadores
                 throw;
             }
         }
-     
+
         private void limpiar()
         {
             try
@@ -155,6 +155,7 @@ namespace Presentacion.Trabajadores
 
         private void btLimpiar_Click(object sender, EventArgs e)
         {
+            errorProvider1.Clear();
             limpiar();
         }
 
@@ -162,15 +163,19 @@ namespace Presentacion.Trabajadores
         {
             try
             {
-                Trabajador t = new Trabajador();
-                t.idEspecialidad = Convert.ToInt32(cbEspecialidad.SelectedValue);
-                t.nombre = tbNombre.Text;
-                t.puesto = tbPuesto.Text;
-                t.cantidadPacientes = Convert.ToInt32(numCantPacientes.Value);
-                t.añosExperiencia = Convert.ToInt32(numAños.Value);
-                LN.agregarTrabajador(t);
-                cargarDataDg();
-                limpiar();
+                errorProvider1.Clear();
+                if (validarDatos(2))
+                {
+                    Trabajador t = new Trabajador();
+                    t.idEspecialidad = Convert.ToInt32(cbEspecialidad.SelectedValue);
+                    t.nombre = tbNombre.Text;
+                    t.puesto = tbPuesto.Text;
+                    t.cantidadPacientes = Convert.ToInt32(numCantPacientes.Value);
+                    t.añosExperiencia = Convert.ToInt32(numAños.Value);
+                    LN.agregarTrabajador(t);
+                    cargarDataDg();
+                    limpiar();
+                }
             }
             catch (Exception)
             {
@@ -181,16 +186,19 @@ namespace Presentacion.Trabajadores
 
         private void btBuscar_Click(object sender, EventArgs e)
         {
+            errorProvider1.Clear();
             buscar();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            errorProvider1.Clear();
             cargarDataDg();
         }
 
         private void dg_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            errorProvider1.Clear();
             try
             {
                 if (e.RowIndex < 0)
@@ -219,17 +227,21 @@ namespace Presentacion.Trabajadores
         {
             try
             {
-                Trabajador t = new Trabajador();
-                t.idTrabajador = Convert.ToInt32(tbIdTrabajador.Text);
-                t.idEspecialidad = Convert.ToInt32(cbEspecialidad.SelectedValue);
-                t.nombre = tbNombre.Text;
-                t.puesto = tbPuesto.Text;
-                t.cantidadPacientes = Convert.ToInt32(numCantPacientes.Value);
-                t.añosExperiencia = Convert.ToInt32(numAños.Value);
-                LN.ModificarTrabajador(t);
-                cargarDataDg();
-                limpiar();
-            }
+                errorProvider1.Clear();
+                if (validarDatos(1))
+                {
+                    Trabajador t = new Trabajador();
+                    t.idTrabajador = Convert.ToInt32(tbIdTrabajador.Text);
+                    t.idEspecialidad = Convert.ToInt32(cbEspecialidad.SelectedValue);
+                    t.nombre = tbNombre.Text;
+                    t.puesto = tbPuesto.Text;
+                    t.cantidadPacientes = Convert.ToInt32(numCantPacientes.Value);
+                    t.añosExperiencia = Convert.ToInt32(numAños.Value);
+                    LN.ModificarTrabajador(t);
+                    cargarDataDg();
+                    limpiar();
+                }
+                           }
             catch (Exception)
             {
                 throw;
@@ -240,6 +252,11 @@ namespace Presentacion.Trabajadores
         {
             try
             {
+                errorProvider1.Clear();
+                if (tbIdTrabajador.Text.Length <= 0)
+                {
+                    MessageBox.Show("Id Trabajdor vacia", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
                 Trabajador t = new Trabajador();
                 t.idTrabajador = Convert.ToInt32(tbIdTrabajador.Text);
                 LN.eliminarTrabajador(t);
@@ -249,6 +266,50 @@ namespace Presentacion.Trabajadores
             catch (Exception)
             {
                 throw;
+            }
+        }
+        private bool validarDatos(int tipo)
+        {
+            int cont = 0;
+            errorProvider1.Clear();
+            if (tbIdTrabajador.Text.Length <= 0 && tipo == 1)// si es uno valida Modificar, si es diferente a 1 valida agreagar
+            {
+                errorProvider1.SetError(tbIdTrabajador, "vacio");
+                cont++;
+            }
+            if (cbEspecialidad.Text.Length <= 0)
+            {
+                errorProvider1.SetError(cbEspecialidad, "vacio");
+                cont++;
+            }
+            if (tbNombre.Text.Length <= 0)
+            {
+                errorProvider1.SetError(tbNombre, "vacio");
+                cont++;
+            }
+            if (tbPuesto.Text.Length <= 0)
+            {
+                errorProvider1.SetError(tbPuesto, "vacio");
+                cont++;
+            }
+            if (cont == 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        private void tbBuscar_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            errorProvider1.Clear();
+            if (!(char.IsNumber(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+            {
+                MessageBox.Show("Solo se permiten numeros", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
             }
         }
     }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tbBuscar = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.dg = new System.Windows.Forms.DataGridView();
@@ -50,8 +51,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btCargarDatos = new System.Windows.Forms.Button();
             this.btBuscar = new System.Windows.Forms.Button();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dg)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // tbBuscar
@@ -60,6 +63,7 @@
             this.tbBuscar.Name = "tbBuscar";
             this.tbBuscar.Size = new System.Drawing.Size(121, 20);
             this.tbBuscar.TabIndex = 24;
+            this.tbBuscar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbBuscar_KeyPress);
             // 
             // label7
             // 
@@ -75,8 +79,9 @@
             this.dg.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dg.Location = new System.Drawing.Point(412, 53);
             this.dg.Name = "dg";
-            this.dg.Size = new System.Drawing.Size(826, 362);
+            this.dg.Size = new System.Drawing.Size(779, 362);
             this.dg.TabIndex = 22;
+            this.dg.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dg_CellClick);
             // 
             // groupBox1
             // 
@@ -101,10 +106,11 @@
             this.groupBox1.Size = new System.Drawing.Size(371, 386);
             this.groupBox1.TabIndex = 21;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Pacientes";
+            this.groupBox1.Text = "Datos Pacientes";
             // 
             // tbIdPaciente
             // 
+            this.tbIdPaciente.Enabled = false;
             this.tbIdPaciente.Location = new System.Drawing.Point(174, 36);
             this.tbIdPaciente.Name = "tbIdPaciente";
             this.tbIdPaciente.Size = new System.Drawing.Size(121, 20);
@@ -133,14 +139,21 @@
             // 
             // cbEstado
             // 
+            this.cbEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbEstado.FormattingEnabled = true;
+            this.cbEstado.Items.AddRange(new object[] {
+            "",
+            "Atencion",
+            "Finalizado"});
             this.cbEstado.Location = new System.Drawing.Point(174, 250);
             this.cbEstado.Name = "cbEstado";
             this.cbEstado.Size = new System.Drawing.Size(121, 21);
             this.cbEstado.TabIndex = 13;
+            this.cbEstado.SelectedIndexChanged += new System.EventHandler(this.cbEstado_SelectedIndexChanged);
             // 
             // cbIdTrabajdador
             // 
+            this.cbIdTrabajdador.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbIdTrabajdador.FormattingEnabled = true;
             this.cbIdTrabajdador.Location = new System.Drawing.Point(174, 81);
             this.cbIdTrabajdador.Name = "cbIdTrabajdador";
@@ -158,12 +171,16 @@
             // 
             // btAgregar
             // 
+            this.btAgregar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btAgregar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.btAgregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.btAgregar.Location = new System.Drawing.Point(290, 313);
             this.btAgregar.Name = "btAgregar";
             this.btAgregar.Size = new System.Drawing.Size(75, 35);
             this.btAgregar.TabIndex = 3;
             this.btAgregar.Text = "Agregar";
             this.btAgregar.UseVisualStyleBackColor = true;
+            this.btAgregar.Click += new System.EventHandler(this.btAgregar_Click);
             // 
             // label5
             // 
@@ -182,6 +199,7 @@
             this.btModificar.TabIndex = 2;
             this.btModificar.Text = "Modificar";
             this.btModificar.UseVisualStyleBackColor = true;
+            this.btModificar.Click += new System.EventHandler(this.btModificar_Click);
             // 
             // label4
             // 
@@ -200,6 +218,7 @@
             this.btEliminar.TabIndex = 1;
             this.btEliminar.Text = "Eliminar";
             this.btEliminar.UseVisualStyleBackColor = true;
+            this.btEliminar.Click += new System.EventHandler(this.btEliminar_Click);
             // 
             // label3
             // 
@@ -240,7 +259,7 @@
             // 
             // btCargarDatos
             // 
-            this.btCargarDatos.Location = new System.Drawing.Point(1139, 23);
+            this.btCargarDatos.Location = new System.Drawing.Point(1070, 19);
             this.btCargarDatos.Name = "btCargarDatos";
             this.btCargarDatos.Size = new System.Drawing.Size(99, 23);
             this.btCargarDatos.TabIndex = 20;
@@ -258,6 +277,10 @@
             this.btBuscar.UseVisualStyleBackColor = true;
             this.btBuscar.Click += new System.EventHandler(this.tbBuscar_Click);
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // frmPaciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -270,11 +293,12 @@
             this.Controls.Add(this.btCargarDatos);
             this.Controls.Add(this.btBuscar);
             this.Name = "frmPaciente";
-            this.Text = "frmPaciente";
+            this.Text = "Formulario Paciente";
             this.Load += new System.EventHandler(this.frmPaciente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dg)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -304,5 +328,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btCargarDatos;
         private System.Windows.Forms.Button btBuscar;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

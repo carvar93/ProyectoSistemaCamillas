@@ -1251,7 +1251,7 @@ namespace Logica
         /// Parametrisa los datos  para eliminar en paciente
         /// </summary>
         /// <param name="paciente"> Paciente</param>
-        public static void eliminarTrabajador(Paciente paciente)
+        public static void eliminarPaciente(Paciente paciente)
         {
             SQLSentencia sentencia = new SQLSentencia
             {

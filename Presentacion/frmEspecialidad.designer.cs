@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tbIdEspecialidad = new System.Windows.Forms.TextBox();
@@ -40,8 +41,11 @@
             this.dgridEspecialidad = new System.Windows.Forms.DataGridView();
             this.tbBuscar = new System.Windows.Forms.TextBox();
             this.button5 = new System.Windows.Forms.Button();
+            this.btLimpiar = new System.Windows.Forms.Button();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgridEspecialidad)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -65,6 +69,7 @@
             // 
             // tbIdEspecialidad
             // 
+            this.tbIdEspecialidad.Enabled = false;
             this.tbIdEspecialidad.Location = new System.Drawing.Point(161, 52);
             this.tbIdEspecialidad.Name = "tbIdEspecialidad";
             this.tbIdEspecialidad.Size = new System.Drawing.Size(100, 20);
@@ -79,7 +84,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(28, 262);
+            this.button1.Location = new System.Drawing.Point(108, 262);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 4;
@@ -89,7 +94,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(139, 262);
+            this.button2.Location = new System.Drawing.Point(189, 262);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 5;
@@ -99,7 +104,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(271, 262);
+            this.button3.Location = new System.Drawing.Point(272, 262);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 6;
@@ -109,9 +114,9 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(427, 46);
+            this.button4.Location = new System.Drawing.Point(396, 48);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.Size = new System.Drawing.Size(96, 23);
             this.button4.TabIndex = 7;
             this.button4.Text = "Buscar";
             this.button4.UseVisualStyleBackColor = true;
@@ -136,13 +141,13 @@
             this.dgridEspecialidad.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgridEspecialidad.Location = new System.Drawing.Point(396, 86);
             this.dgridEspecialidad.Name = "dgridEspecialidad";
-            this.dgridEspecialidad.Size = new System.Drawing.Size(399, 150);
+            this.dgridEspecialidad.Size = new System.Drawing.Size(399, 199);
             this.dgridEspecialidad.TabIndex = 9;
             this.dgridEspecialidad.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgridEspecialidad_CellClick);
             // 
             // tbBuscar
             // 
-            this.tbBuscar.Location = new System.Drawing.Point(524, 49);
+            this.tbBuscar.Location = new System.Drawing.Point(529, 48);
             this.tbBuscar.Name = "tbBuscar";
             this.tbBuscar.Size = new System.Drawing.Size(100, 20);
             this.tbBuscar.TabIndex = 10;
@@ -150,7 +155,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(702, 46);
+            this.button5.Location = new System.Drawing.Point(670, 46);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(93, 23);
             this.button5.TabIndex = 11;
@@ -158,11 +163,26 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
+            // btLimpiar
+            // 
+            this.btLimpiar.Location = new System.Drawing.Point(27, 262);
+            this.btLimpiar.Name = "btLimpiar";
+            this.btLimpiar.Size = new System.Drawing.Size(75, 23);
+            this.btLimpiar.TabIndex = 12;
+            this.btLimpiar.Text = "Limpiar";
+            this.btLimpiar.UseVisualStyleBackColor = true;
+            this.btLimpiar.Click += new System.EventHandler(this.btLimpiar_Click);
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // frmEspecialidad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(832, 383);
+            this.Controls.Add(this.btLimpiar);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.tbBuscar);
             this.Controls.Add(this.dgridEspecialidad);
@@ -172,11 +192,12 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "frmEspecialidad";
-            this.Text = "frmEspecialidad";
+            this.Text = "Fromulario Especialidad";
             this.Load += new System.EventHandler(this.frmEspecialidad_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgridEspecialidad)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -196,5 +217,7 @@
         private System.Windows.Forms.DataGridView dgridEspecialidad;
         private System.Windows.Forms.TextBox tbBuscar;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btLimpiar;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btLimpiar = new System.Windows.Forms.Button();
             this.btAgregar = new System.Windows.Forms.Button();
@@ -50,10 +51,12 @@
             this.tbBuscar = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.btBuscar = new System.Windows.Forms.Button();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numAños)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numCantPacientes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dg)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -79,7 +82,7 @@
             this.groupBox1.Size = new System.Drawing.Size(333, 342);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Trabajador";
+            this.groupBox1.Text = "Datos Trabajador";
             // 
             // btLimpiar
             // 
@@ -130,6 +133,7 @@
             // 
             // cbEspecialidad
             // 
+            this.cbEspecialidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbEspecialidad.FormattingEnabled = true;
             this.cbEspecialidad.Location = new System.Drawing.Point(135, 66);
             this.cbEspecialidad.Name = "cbEspecialidad";
@@ -160,6 +164,7 @@
             // 
             // tbIdTrabajador
             // 
+            this.tbIdTrabajador.Enabled = false;
             this.tbIdTrabajador.Location = new System.Drawing.Point(135, 31);
             this.tbIdTrabajador.Name = "tbIdTrabajador";
             this.tbIdTrabajador.Size = new System.Drawing.Size(103, 20);
@@ -243,6 +248,7 @@
             this.tbBuscar.Name = "tbBuscar";
             this.tbBuscar.Size = new System.Drawing.Size(103, 20);
             this.tbBuscar.TabIndex = 9;
+            this.tbBuscar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbBuscar_KeyPress);
             // 
             // button1
             // 
@@ -264,6 +270,10 @@
             this.btBuscar.UseVisualStyleBackColor = true;
             this.btBuscar.Click += new System.EventHandler(this.btBuscar_Click);
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // frmTrabajador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -283,6 +293,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numAños)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numCantPacientes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dg)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -312,5 +323,6 @@
         private System.Windows.Forms.TextBox tbBuscar;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btBuscar;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
