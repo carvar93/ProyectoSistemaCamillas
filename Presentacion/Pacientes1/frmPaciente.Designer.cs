@@ -253,9 +253,10 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(73, 84);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 13);
+            this.label2.Size = new System.Drawing.Size(63, 13);
             this.label2.TabIndex = 7;
-            this.label2.Text = "IdTrabajdor";
+            this.label2.Text = "Especialista";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // btCargarDatos
             // 

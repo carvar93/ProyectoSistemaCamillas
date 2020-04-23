@@ -29,22 +29,22 @@ namespace Presentacion.Pacientes1
                 listaPaciente = LN.consultaPaciente();
                 DataTable dt = new DataTable();
                 dt.Columns.Add("ID");
-                dt.Columns.Add("Id Trabajador");
-                dt.Columns.Add("Nombre Trabajador");
                 dt.Columns.Add("Nombre Paciente");
                 dt.Columns.Add("Padecimientos");
                 dt.Columns.Add("Motivo Emergencia");
                 dt.Columns.Add("Estado");
+                dt.Columns.Add("Id Especialista");
+                dt.Columns.Add("Especialista");
                 for (int i = 0; i < listaPaciente.Count; i++)
                 {
                     dt.Rows.Add(
                         listaPaciente.ElementAt(i).idPaciente,
-                        listaPaciente.ElementAt(i).idTrabajador,
-                        nombreTrabajador(listaPaciente.ElementAt(i).idTrabajador),
                         listaPaciente.ElementAt(i).nombre,
                         listaPaciente.ElementAt(i).padecimiente,
                         listaPaciente.ElementAt(i).motivoEmergencia,
-                        listaPaciente.ElementAt(i).Estado
+                        listaPaciente.ElementAt(i).Estado,
+                        listaPaciente.ElementAt(i).idTrabajador,
+                        nombreTrabajador(listaPaciente.ElementAt(i).idTrabajador)
                         );
                 }
                 dg.DataSource = null;
@@ -66,24 +66,24 @@ namespace Presentacion.Pacientes1
                 listaPaciente = LN.consultaPaciente();
                 DataTable dt = new DataTable();
                 dt.Columns.Add("ID");
-                dt.Columns.Add("Id Trabajador");
-                dt.Columns.Add("Nombre Trabajador");
                 dt.Columns.Add("Nombre Paciente");
                 dt.Columns.Add("Padecimientos");
                 dt.Columns.Add("Motivo Emergencia");
                 dt.Columns.Add("Estado");
+                dt.Columns.Add("Id Especialista");
+                dt.Columns.Add("Especialista");
                 for (int i = 0; i < listaPaciente.Count; i++)
                 {
                     if (listaPaciente.ElementAt(i).idPaciente.ToString().Equals(tbBuscar.Text.Trim()))
                     {
                         dt.Rows.Add(
                             listaPaciente.ElementAt(i).idPaciente,
-                            listaPaciente.ElementAt(i).idTrabajador,
-                            nombreTrabajador(listaPaciente.ElementAt(i).idTrabajador),
                             listaPaciente.ElementAt(i).nombre,
                             listaPaciente.ElementAt(i).padecimiente,
                             listaPaciente.ElementAt(i).motivoEmergencia,
-                            listaPaciente.ElementAt(i).Estado
+                            listaPaciente.ElementAt(i).Estado,
+                            listaPaciente.ElementAt(i).idTrabajador,
+                            nombreTrabajador(listaPaciente.ElementAt(i).idTrabajador)
                             );
                     }
                 }
@@ -169,7 +169,7 @@ namespace Presentacion.Pacientes1
                 if (validarDatos(2))
                 {
                 Paciente p = new Paciente();
-                p.idTrabajador = Convert.ToInt32(cbIdTrabajdador.Text.Trim());
+                p.idTrabajador = Convert.ToInt32(cbIdTrabajdador.SelectedValue);
                 p.nombre = tbNombre.Text.Trim();
                 p.padecimiente = tbPadecimiento.Text.Trim();
                 p.motivoEmergencia = tbMotivo.Text.Trim();
@@ -194,7 +194,7 @@ namespace Presentacion.Pacientes1
                 {
                     Paciente p = new Paciente();
                     p.idPaciente = Convert.ToInt32(tbIdPaciente.Text.Trim());
-                    p.idTrabajador = Convert.ToInt32(cbIdTrabajdador.Text.Trim());
+                    p.idTrabajador = Convert.ToInt32(cbIdTrabajdador.SelectedValue);
                     p.nombre = tbNombre.Text.Trim();
                     p.padecimiente = tbPadecimiento.Text.Trim();
                     p.motivoEmergencia = tbMotivo.Text.Trim();
@@ -246,11 +246,11 @@ namespace Presentacion.Pacientes1
                 else
                 {
                     this.tbIdPaciente.Text = dg.Rows[e.RowIndex].Cells[0].Value.ToString();
-                    this.cbIdTrabajdador.Text = dg.Rows[e.RowIndex].Cells[1].Value.ToString();
-                    this.tbNombre.Text = dg.Rows[e.RowIndex].Cells[3].Value.ToString();
-                    this.tbPadecimiento.Text = dg.Rows[e.RowIndex].Cells[4].Value.ToString();
-                    this.tbMotivo.Text = dg.Rows[e.RowIndex].Cells[5].Value.ToString();
-                    this.cbEstado.Text = dg.Rows[e.RowIndex].Cells[6].Value.ToString();
+                    this.cbIdTrabajdador.Text = dg.Rows[e.RowIndex].Cells[6].Value.ToString();
+                    this.tbNombre.Text = dg.Rows[e.RowIndex].Cells[1].Value.ToString();
+                    this.tbPadecimiento.Text = dg.Rows[e.RowIndex].Cells[2].Value.ToString();
+                    this.tbMotivo.Text = dg.Rows[e.RowIndex].Cells[3].Value.ToString();
+                    this.cbEstado.Text = dg.Rows[e.RowIndex].Cells[4].Value.ToString();
                 }
             }
             catch (Exception)
@@ -270,7 +270,7 @@ namespace Presentacion.Pacientes1
             List<Trabajador> t = new List<Trabajador>();
             t = LN.consultaTrabajador();
                 cbIdTrabajdador.DataSource = t;
-                cbIdTrabajdador.DisplayMember = "idTrabajador";
+                cbIdTrabajdador.DisplayMember = "nombre";
                 cbIdTrabajdador.ValueMember = "idTrabajador";
                 cbIdTrabajdador.Refresh();
             }
@@ -332,6 +332,11 @@ namespace Presentacion.Pacientes1
                 e.Handled = true;
                 return;
             }
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
